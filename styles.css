@@ -1,0 +1,40 @@
+body {
+  background-color: #f0f5d8;
+}
+
+h1 {
+  text-align: center;
+  font-family: verdana;
+  line-height: 80%;
+}
+
+p {
+  text-align: center;
+  font-family: verdana;
+  font-size: 15px;
+  line-height: 95%;
+}
+
+a:link {
+  color: darkblue;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: darkblue;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: powderblue;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: darkblue;
+  background-color: transparent;
+  text-decoration: underline;
+}
