@@ -38,3 +38,9 @@ a:active {
   background-color: transparent;
   text-decoration: underline;
 }
+
+.bottom {
+  font-size: 10px;
+  position: fixed;
+  bottom: 0;
+}
