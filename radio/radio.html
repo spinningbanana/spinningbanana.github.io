@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>cool radio</title>
+<link rel="icon" href="icon.png">
+<link rel="stylesheet" href="../styles.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<!--Spent way too long figuring this out...-->
+<div class="buttonstuff">
+	<img src="radio.png" width="100" height="164" alt="radio" class="center">
+</div>
+<script>
+      function play() {
+        var audio = document.getElementById("audio");
+		var element = document.getElementById("button");
+        audio.play();
+		audio.loop = true;
+		element.parentNode.removeChild(element);
+      }
+    </script>
+
+    <input type="button" class="buttonstuff" id="button" value="PLAY" onclick="play()">
+    <audio id="audio" src="radio.mp3"></audio>
+	
+<a href="../index.html"><p class="bottom">Home</a>
+
+</body>
+</html>
