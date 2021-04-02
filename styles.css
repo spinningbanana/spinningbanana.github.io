@@ -31,10 +31,11 @@ img {
   margin-right: auto;
 }
 
-center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+canvas {
+    padding: 0;
+    margin: auto;
+    display: block;
+    width: 640px;
 }
 
 a:link {
