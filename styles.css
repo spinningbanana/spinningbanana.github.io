@@ -67,6 +67,11 @@ a:active {
   position: fixed;
   bottom: 0;
 }
+.bottom2 {
+  font-size: 10px;
+  position: fixed;
+  bottom: 10px;
+}
 
 .buttonstuff {
   font-family: verdana;
