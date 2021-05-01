@@ -1,3 +1,4 @@
+/*background and formatting*/
 body {
   background-image: linear-gradient(
   45deg, 
@@ -15,6 +16,7 @@ body {
 h1 {
   text-align: center;
   font-family: verdana;
+  font-size: 20px;
   line-height: 80%;
 }
 
@@ -25,6 +27,7 @@ p {
   line-height: 95%;
 }
 
+/*centering*/
 img {
   display: block;
   margin-left: auto;
@@ -45,6 +48,7 @@ canvas {
     width: 640px;
 }
 
+/*link stuff*/
 a:link {
   color: darkblue;
   background-color: transparent;
@@ -69,6 +73,7 @@ a:active {
   text-decoration: underline;
 }
 
+/*bottom of page text*/
 .bottom {
   font-size: 10px;
   position: fixed;
@@ -86,6 +91,7 @@ a:active {
   bottom: 20px;
 }
 
+/*button stuff (for radio)*/
 .buttonstuff {
   font-family: verdana;
   margin: 0;
@@ -94,4 +100,101 @@ a:active {
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+
+/*DIV STUFF*/
+
+.borderbox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 1000px;
+  min-width: 300px;
+  padding: 2px;
+}
+.headerbox {
+  border-style: solid;
+  border-width: 5px;
+  border-color: rgba(200,200,150,0.5);
+  background: rgba(200,200,150,0.2);
+  width: 60%;
+  max-width: 650px;
+  min-width: 300px;
+  padding: 2px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.infobox {
+  border-style: solid;
+  border-width: 5px;
+  border-color: rgba(200,200,150,0.5);
+  background: rgba(200,200,150,0.2);
+  width: 60%;
+  max-width: 650px;
+  min-width: 300px;
+  padding: 2px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.warningbox {
+  border-style: solid;
+  border-width: 5px;
+  border-color: #d14f4f;
+  background: rgba(200,0,0,0.3);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  max-width: 650px;
+  min-width: 300px;
+  padding: 2px;
+}
+
+/*alerts*/
+
+/* alert code:
+<div class="alert">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+  This is an alert box.
+</div>
+*/
+
+.alert1 {
+  padding: 5px;
+  background-color: rgba(200,0,0,0.4);
+  color: black;
+  margin-bottom: 15px;
+  font-family: verdana;
+  position: fixed;
+  top: 5px;
+}
+
+.alert2 {
+  padding: 5px;
+  background-color: rgba(200,0,0,0.4);
+  color: black;
+  margin-bottom: 15px;
+  font-family: verdana;
+  position: fixed;
+  top: 40px;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: black;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: white;
 }
