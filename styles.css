@@ -35,17 +35,22 @@ img {
 }
 
 iframe {
-    padding: 0;
-    margin: auto;
-    display: block;
-    width: 853px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: rgba(200,200,150,0.7);
+  padding: 0;
+  margin: auto;
+  display: block;
 }
 
 canvas {
-    padding: 0;
-    margin: auto;
-    display: block;
-    width: 640px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: rgba(200,200,150,0.7);
+  padding: 0;
+  margin: auto;
+  display: block;
+  width: 640px;
 }
 
 /*link stuff*/
@@ -91,6 +96,13 @@ a:active {
   bottom: 20px;
 }
 
+.bottomright {
+  font-size: 10px;
+  position: fixed;
+  bottom: 0;
+  right: 8px;
+}
+
 /*button stuff (for radio)*/
 .buttonstuff {
   font-family: verdana;
@@ -109,9 +121,8 @@ a:active {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 80%;
-  max-width: 1000px;
-  min-width: 300px;
+  width: 70%;
+  min-width: 270px;
   padding: 2px;
 }
 .headerbox {
@@ -119,9 +130,20 @@ a:active {
   border-width: 5px;
   border-color: rgba(200,200,150,0.5);
   background: rgba(200,200,150,0.2);
-  width: 60%;
-  max-width: 650px;
-  min-width: 300px;
+  width: 70%;
+  min-width: 250px;
+  padding: 2px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.headerboxsmall {
+  border-style: solid;
+  border-width: 5px;
+  border-color: rgba(200,200,150,0.5);
+  background: rgba(200,200,150,0.2);
+  width: 40%;
+  min-width: 250px;
   padding: 2px;
   margin-left: auto;
   margin-right: auto;
@@ -132,9 +154,20 @@ a:active {
   border-width: 5px;
   border-color: rgba(200,200,150,0.5);
   background: rgba(200,200,150,0.2);
-  width: 60%;
-  max-width: 650px;
-  min-width: 300px;
+  width: 70%;
+  min-width: 250px;
+  padding: 2px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.infoboxsmall{
+  border-style: solid;
+  border-width: 5px;
+  border-color: rgba(200,200,150,0.5);
+  background: rgba(200,200,150,0.2);
+  width: 18%;
+  min-width: 100px;
   padding: 2px;
   margin-left: auto;
   margin-right: auto;
@@ -149,8 +182,7 @@ a:active {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 60%;
-  max-width: 650px;
+  width: 70%;
   min-width: 300px;
   padding: 2px;
 }
@@ -166,7 +198,7 @@ a:active {
 
 .alert1 {
   padding: 5px;
-  background-color: rgba(200,0,0,0.4);
+  background-color: rgba(200,0,0,0.5);
   color: black;
   margin-bottom: 15px;
   font-family: verdana;
