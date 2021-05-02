@@ -143,6 +143,7 @@ a:active {
   border-color: rgba(200,200,150,0.5);
   background: rgba(200,200,150,0.2);
   width: 40%;
+  max-width: 500px;
   min-width: 250px;
   padding: 2px;
   margin-left: auto;
@@ -167,6 +168,7 @@ a:active {
   border-color: rgba(200,200,150,0.5);
   background: rgba(200,200,150,0.2);
   width: 18%;
+  max-width: 400px;
   min-width: 100px;
   padding: 2px;
   margin-left: auto;
