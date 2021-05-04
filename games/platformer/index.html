@@ -1,14 +1,12 @@
 <!DOCTYPE html>
+<head>
 <title>cube platformer</title>
 <link rel="icon" href="../icon.png">
 <link rel="stylesheet" href="../../styles.css">
 <meta name="description" content="platformer game made by eean">
 <meta name="theme-color" content="#f0f5d8">
-<html lang="en">
-
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
+<html lang="en">
 
 <script>
 	// Detects if the user is on a mobile device
@@ -16,7 +14,9 @@
     window.open("http://spinningbanana.github.io/games/mobile.html", "_self");
 }
 </script>
+</head>
 
+<body>
 <div id="borderbox">
 	<div class="headerboxsmall">
 		<h1>Cube Platformer</h1>
@@ -25,46 +25,13 @@
 	<div style="line-height:5px;">
 		<br>
 	</div>
-
-	<script>
-	   	// Detection of old browsers that do not support the canvas element
-		// Falls back to a default page
-	    if (!document.createElement("canvas").getContext)
-	    {
-			window.open("http://spinningbanana.github.io/games/unsupported.html", "_self");
-		}
-	</script>
 	
-  	<!-- EXTRASOURCES -->
-	<!-- Loads the Javascript code...-->
-  	<script src="src/Runtime.js"></script>
-	
-</head>
-
-<!-- This is where we create the Canvas element that will contain the application...-->
-<body>
-    <div id="wrapper">
-	    <div id="border">
-		    <div id="canvas">
-			    <canvas id="MMFCanvas" width="640" height="480">
-				    <p>Your browser does not support Canvas.</p>
-			    </canvas>   
-		    </div>
-	    </div>
-    </div>  
-    <script>
-        // RUNTIMESTART
-        // This is where the HTML5 runtime is actually started
-	    window.addEventListener("load", windowLoaded, false);
-	    function windowLoaded()
-	    {
-		    // Calls the runtime
-		    // First parameter : name of the canvas element
-		    // Second parameter : path to the cch file. Images and sounds must lay beside this file
-		    new Runtime("MMFCanvas", "resources/Cube Platformer.cch");
-	    }
-        // RUNTIMESTARTEND
-    </script>
+	<iframe 
+		src="https://spinningbanana.github.io/games/platformer/game.html" 
+		width="640" 
+		height="480" 
+		scrolling="no">
+	</iframe>
 	
 	<div style="line-height:5px;">
 		<br>

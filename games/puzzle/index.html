@@ -1,23 +1,12 @@
 <!DOCTYPE html>
+<head>
 <title>puzzle game</title>
 <link rel="icon" href="icon.png">
 <link rel="stylesheet" href="../../styles.css">
 <meta name="description" content="the greatest puzzle game of all time">
 <meta name="theme-color" content="#ffffff">
 <html lang="en">
-
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-<script>
-window.addEventListener("keydown", function(e) {
-	// space and arrow keys
-	if([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
-		e.preventDefault();
-	}
-}, false);
-</script>
 
 <script>
 	// Detects if the user is on a mobile device
@@ -25,24 +14,10 @@ window.addEventListener("keydown", function(e) {
     window.open("http://spinningbanana.github.io/games/mobile.html", "_self");
 }
 </script>
-
-	<script>
-	   	// Detection of old browsers that do not support the canvas element
-		// Falls back to a default page
-	    if (!document.createElement("canvas").getContext)
-	    {
-			window.open("http://spinningbanana.github.io/games/unsupported.html", "_self");
-		}
-	</script>
-	
-  	<!-- EXTRASOURCES -->
-	<!-- Loads the Javascript code...-->
-  	<script src="src/Runtime.js"></script>
-	
 </head>
 
 <body>
-
+<div id="borderbox">
 	<div class="headerboxsmall">
 		<h1>Puzzle Game</h1>
 	</div>
@@ -51,26 +26,12 @@ window.addEventListener("keydown", function(e) {
 		<br>
 	</div>
 
-<!-- This is where we create the Canvas element that will contain the application...-->
-	<div>
-		<canvas id="MMFCanvas" width="640" height="480">
-			<p>Your browser does not support Canvas.</p>
-		</canvas>   
-	</div>
-	
-    <script>
-        // RUNTIMESTART
-        // This is where the HTML5 runtime is actually started
-	    window.addEventListener("load", windowLoaded, false);
-	    function windowLoaded()
-	    {
-		    // Calls the runtime
-		    // First parameter : name of the canvas element
-		    // Second parameter : path to the cch file. Images and sounds must lay beside this file
-		    new Runtime("MMFCanvas", "resources/Puzzle Game.cch");
-	    }
-        // RUNTIMESTARTEND
-    </script>
+	<iframe 
+		src="https://spinningbanana.github.io/games/puzzle/game.html" 
+		width="640" 
+		height="480" 
+		scrolling="no">
+	</iframe>
 	
 	<div style="line-height:5px;">
 		<br>
@@ -79,7 +40,8 @@ window.addEventListener("keydown", function(e) {
 	<div class="infoboxsmall">
 		<p style="font-size:10px">Or play it on <a href="https://www.newgrounds.com/portal/view/753986">Newgrounds</a></p>
 	</div>
-	
+</div>
+
 <a href="https://spinningbanana.github.io/games"><p class="bottom2">Back to Games</a>
 <a href="https://spinningbanana.github.io"><p class="bottom">Home</a>
 <p class="bottomright">cool website</p>
