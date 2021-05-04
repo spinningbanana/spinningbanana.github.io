@@ -10,7 +10,6 @@ body {
   #e5ebca 75%, 
   #e5ebca 100%);
   background-size: 141.42px 141.42px;
-);
 }
 
 h1 {
@@ -48,6 +47,9 @@ canvas {
   margin: auto;
   display: block;
   width: 640px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: rgba(200,200,150,0.7);
 }
 
 /*link stuff*/
@@ -121,7 +123,6 @@ a:active {
   width: 70%;
   min-width: 270px;
   padding: 2px;
-  z-index: -1;
 }
 .headerbox {
   border-style: solid;
