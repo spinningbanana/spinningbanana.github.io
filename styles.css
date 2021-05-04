@@ -124,6 +124,7 @@ a:active {
   width: 70%;
   min-width: 270px;
   padding: 2px;
+  z-index: -1;
 }
 .headerbox {
   border-style: solid;

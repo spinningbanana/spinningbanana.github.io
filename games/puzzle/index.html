@@ -39,20 +39,6 @@ window.addEventListener("keydown", function(e) {
 	<!-- Loads the Javascript code...-->
   	<script src="src/Runtime.js"></script>
 	
-	<script>
-        // RUNTIMESTART
-        // This is where the HTML5 runtime is actually started
-	    window.addEventListener("load", windowLoaded, false);
-	    function windowLoaded()
-	    {
-		    // Calls the runtime
-		    // First parameter : name of the canvas element
-		    // Second parameter : path to the cch file. Images and sounds must lay beside this file
-		    new Runtime("MMFCanvas", "resources/Puzzle Game.cch");
-	    }
-        // RUNTIMESTARTEND
-    </script>
-	
 </head>
 
 <body>
@@ -66,15 +52,23 @@ window.addEventListener("keydown", function(e) {
 	</div>
 
 <!-- This is where we create the Canvas element that will contain the application...-->
-    <div id="wrapper">
-	    <div id="border">
-		    <div id="canvas">
-			    <canvas id="MMFCanvas" width="640" height="480">
-				    <p>Your browser does not support Canvas.</p>
-			    </canvas>   
-		    </div>
-	    </div>
-    </div>  
+	<canvas id="MMFCanvas" width="640" height="480">
+		<p>Your browser does not support Canvas.</p>
+	</canvas>
+	
+	<script>
+        // RUNTIMESTART
+        // This is where the HTML5 runtime is actually started
+	    window.addEventListener("load", windowLoaded, false);
+	    function windowLoaded()
+	    {
+		    // Calls the runtime
+		    // First parameter : name of the canvas element
+		    // Second parameter : path to the cch file. Images and sounds must lay beside this file
+		    new Runtime("MMFCanvas", "resources/Puzzle Game.cch");
+	    }
+        // RUNTIMESTARTEND
+    </script>
 	
 	<div style="line-height:5px;">
 		<br>
