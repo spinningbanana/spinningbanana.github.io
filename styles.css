@@ -43,7 +43,6 @@ iframe {
 }
 
 canvas {
-  position: relative;
   padding: 0;
   margin: auto;
   display: block;
@@ -51,7 +50,6 @@ canvas {
   border-style: solid;
   border-width: 5px;
   border-color: rgba(200,200,150,0.7);
-  z-index: 1;
 }
 
 /*link stuff*/
@@ -125,11 +123,8 @@ a:active {
   width: 70%;
   min-width: 270px;
   padding: 2px;
-  
-  z-index: -1;
 }
 .headerbox {
-  position: relative;
   border-style: solid;
   border-width: 5px;
   border-color: rgba(200,200,150,0.5);
@@ -139,12 +134,9 @@ a:active {
   padding: 2px;
   margin-left: auto;
   margin-right: auto;
-  
-  z-index: 1;
 }
 
 .headerboxsmall {
-  position: relative;
   border-style: solid;
   border-width: 5px;
   border-color: rgba(200,200,150,0.5);
@@ -155,12 +147,9 @@ a:active {
   padding: 2px;
   margin-left: auto;
   margin-right: auto;
-  
-  z-index: 1;
 }
 
 .infobox {
-  position: relative;
   border-style: solid;
   border-width: 5px;
   border-color: rgba(200,200,150,0.5);
@@ -170,12 +159,9 @@ a:active {
   padding: 2px;
   margin-left: auto;
   margin-right: auto;
-  
-  z-index: 1;
 }
 
 .infoboxsmall{
-  position: relative;
   border-style: solid;
   border-width: 5px;
   border-color: rgba(200,200,150,0.5);
@@ -186,8 +172,6 @@ a:active {
   padding: 2px;
   margin-left: auto;
   margin-right: auto;
-  
-  z-index: 1;
 }
 
 .warningbox {
