@@ -52,11 +52,16 @@ window.addEventListener("keydown", function(e) {
 	</div>
 
 <!-- This is where we create the Canvas element that will contain the application...-->
-	<canvas id="MMFCanvas" width="640" height="480">
-		<p>Your browser does not support Canvas.</p>
-	</canvas>
-	
-	<script>
+    <div id="wrapper">
+	    <div id="border">
+		    <div id="canvas">
+			    <canvas id="MMFCanvas" width="640" height="480">
+				    <p>Your browser does not support Canvas.</p>
+			    </canvas>   
+		    </div>
+	    </div>
+    </div>  
+    <script>
         // RUNTIMESTART
         // This is where the HTML5 runtime is actually started
 	    window.addEventListener("load", windowLoaded, false);
