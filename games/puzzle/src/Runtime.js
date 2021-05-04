@@ -586,10 +586,3 @@ this.a.b.Da&&(this.a.b.Da=G,this.a.c.tf(this.a))},Mb:function(a){this.a.o!=a&&(t
 start:function(){this.sd.start()},Mf:function(){this.sd.Mf(this.Pd==this.a.c.Rc)},Pe:function(a){this.sd.Pe(a)},ug:function(a){this.sd.ug(a)},reverse:function(){this.sd.reverse()},Mb:function(a){this.sd.Mb(a);this.a.b.C=j;this.a.b.Da=j},Nb:function(a){this.sd.Nb(a);this.a.b.C=j;this.a.b.Da=j},ge:function(a){this.sd.ge(a);this.a.b.C=j;this.a.b.Da=j},zx:Z(0)});Ca.WC=1;Ca.XC=2;Ca.cK=4;Ca.prototype={L:function(a,b,c,d,e){this.U!=m&&this.U.nb();d!=m&&(b.b.va=d.Jx);this.Hv=b.Xb.Lu;d=m;b.b.ed=-1;if(c.dg!=
 m&&a<c.dg.jn){d=c.dg.rd[a];this.Gv=a;-1==e&&(e=d.vu);b.b.ed=e;switch(e){case 0:this.U=new Xa;break;case 1:this.U=new Td;break;case 2:this.U=new Wa;break;case 3:this.U=new Sd;break;case 4:this.U=new ta;break;case 5:this.U=new Ud;break;case 9:this.U=new L;break;case 14:this.U=m,this.U==m&&(this.U=new Xa)}b.b.va=this.lt(b,d.tA,b.b.va);this.U.L(b,d)}-1==b.b.ed&&(b.b.ed=0,this.U=new Xa,this.U.L(b,m),b.b.va=0)},iG:function(a,b,c){this.U!=m&&this.U.nb();a.b.ed=b;switch(b){case 11:this.U=new Rd;break;case 13:this.U=
 new Qd}this.U.a=a;c==G&&this.U.L(a,m)},nb:function(){this.U.nb()},move:function(){this.U.move()},lt:function(a,b,c){if(0>c||32<=c){for(var d=0,e=b,g,c=0;32>c;c++)g=e,e>>=1,0!=(g&1)&&d++;if(0==d)c=0;else{d=a.c.random(d);e=b;for(c=0;!(g=e,e>>=1,0!=(g&1)&&(d--,0>d));c++);}}return c}};zd(pa,ab)};
-
-window.addEventListener("keydown", function(e) {
-// space and arrow keys
-if([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
-e.preventDefault();
-}
-}, false);
