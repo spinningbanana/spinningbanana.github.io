@@ -54,11 +54,20 @@
   left: 50%;
   transform: translate(-1100%, -50%);
 }
+
+#content-desktop {display: block;}
+#content-mobile {display: none;}
+
+@media screen and (max-width: 810px) {
+#content-desktop {display: none;}
+#content-mobile {display: block;}
+}
 </style>
 
 <body>
 
 <div id="borderbox">
+ 
 	<image 
 		height="625px"
 		width="800px"
@@ -83,7 +92,7 @@
 </div>
 
 <p class="bottom"><a href="https://spinningbanana.github.io">Home</a></p>
-<p class="bottomright">may not work well on smaller screens</p>
+<p class="bottomright" style="color:red;">may not work well on smaller screens</p>
 <p class="bottomright2">cool website</p>
 
 </body>
