@@ -105,9 +105,12 @@ a:active {
 }
 
 .bottomright2 {
+  text-align: center;
+  font-family: verdana;
   font-size: 10px;
+  line-height: 95%;
   position: fixed;
-  bottom: 10px;
+  bottom: 20px;
   right: 8px;
 }
 
