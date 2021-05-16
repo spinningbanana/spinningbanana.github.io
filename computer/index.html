@@ -72,7 +72,12 @@ function setBrowserFrameSource() {
     browserFrame.src= document.getElementById("txtUrl").value;
 }
 </script>
-
+<script>
+// Enable navigation prompt
+window.onbeforeunload = function() {
+    return true;
+};
+</script>
 <div id="borderbox">
  
 	<image 
