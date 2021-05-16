@@ -25,7 +25,7 @@
   z-index: 5;
 }
 
-#iframe {
+#browser {
   border: none;
   padding: 0px;
   z-index: 1;
@@ -43,7 +43,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-1200%, -50%);
+  transform: translate(-1100%, -50%);
 }
 
 #forward {
@@ -52,7 +52,12 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-1100%, -50%);
+  transform: translate(-1000%, -50%);
+}
+
+input {
+  position: relative;
+  z-index: 6;
 }
 
 .bottomright {
@@ -61,6 +66,7 @@
 </style>
 
 <body>
+<script src="urlchange.js"></script>
 
 <div id="borderbox">
  
@@ -72,11 +78,18 @@
 	</image>
 
 	<iframe 
-		id="iframe"
+		id="browser"
+		name="browser"
 		src="home.html" 
 		width="880px" 
 		height="567px">
 	</iframe>
+	
+	
+	<form id="above" method="post" target="browser">
+		<input id="txtUrl" placeholder="URL (start with https://)" name="url" type="text" />
+		<input type="button" value="Go" onclick="setBrowserFrameSource(); return false;"/>
+	</form>
 	
 	<div id="back">
 		<input type="button" value="<" onclick="history.back()">

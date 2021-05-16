@@ -9,7 +9,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <html lang="en">
 </head>
-
 <style>
 body {
   background-color: white;
@@ -36,12 +35,17 @@ body {
   right: 18px;
 }
 </style>
+<script>
+function setBrowserFrameSource() {
+	var browserFrame = document.getElementById("browser");
+    browserFrame.src= document.getElementById("txtUrl").value;
+}
+</script>
 <body>
-
 <div id="borderbox">
 	<div class="headerbox">
 		<h1>Computer</h1>
-		<p>Many websites may not connect because they don't like being browsed from an embed. Have fun!<p>
+		<p><u>Most</u> websites will not connect because they don't like being browsed from an embed. Have fun!<p>
 	</div>
 
 	<div style="line-height:5px;">
@@ -49,7 +53,10 @@ body {
 	</div>
 
 	<div class="infobox">
-		<a href="https://wiby.me"><b><p style="text-align:center">Browse Wiby</b></a>
+		<h1>Browse</h1>
+	
+		<a href="https://wiby.me"><p style="text-align:center">Wiby</a>
+		<a href="https://spinningbanana.github.io"><p style="text-align:center">A cool website O.o</a>
 	</div>
 </div>
 
