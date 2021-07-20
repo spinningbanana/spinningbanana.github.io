@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>games</title>
+<title>stopwatch</title>
 <link rel="icon" href="icon.png">
 <link rel="stylesheet" href="../styles.css">
 <meta name="description" content="play games here">
@@ -10,24 +10,27 @@
 <html lang="en">
 </head>
 <body>
-
 <div id="borderbox">
 	<div class="headerbox">
-		<h1>Games</h1>
-		<p>Play cool games here.<p>
+		<h1>Stopwatch</h1>
 	</div>
 	
 	<div style="line-height:5px;">
     <br>
 	</div>
 	
-	<div class="infobox">
-		<h1>Navigation</h1>
-		<a href="https://spinningbanana.github.io/games/puzzle/"><p style="text-align:center">Puzzle Game</a></br>
-		<a href="https://spinningbanana.github.io/games/platformer/"><p style="text-align:center">Cube Platformer</a></br>
-		<a href="https://spinningbanana.github.io/games/soda/"><p style="text-align:center">SODA DRINKING SIMULATOR</a>
-		<p></br><p>
-	</div>
+    <div class="infobox">
+        <div class="timerDisplay">
+            00 : 00 : 00 : 000
+        </div>
+        <div class="buttons">
+            <button id="startTimer">Start</button>
+            <button id="pauseTimer">Pause</button>
+            <button id="resetTimer">Reset</button>
+        </div>
+    </div>
+    <!--Script-->
+    <script src="stopwatch.js"></script>
 </div>
 
 <a href="https://spinningbanana.github.io"><p class="bottom">Home</a>

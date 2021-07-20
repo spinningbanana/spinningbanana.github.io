@@ -198,6 +198,33 @@ a:active {
   margin-right: auto;
 }
 
+.timerDisplay{
+  padding: 10px;
+  text-align: center;
+  font-family: verdana;
+  font-size: 40px;
+  line-height: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.buttons{
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  display:flex;
+  justify-content: space-around;
+  padding:10px
+}
+
+.buttons button{
+  background-color: #f0f5d8;
+  color: #000000;
+  border: none;
+  font-family: verdana;
+  padding: 2px 4px;
+}
+
 /*alerts*/
 
 /* alert code:
