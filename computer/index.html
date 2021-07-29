@@ -8,26 +8,8 @@
 <meta name="theme-color" content="#f0f5d8">
 <html lang="en">
 
-<script>
-  // Main script for the computer
-  function setBrowserFrameSource() {
-	  var browserFrame = document.getElementById("browser");
-    browserFrame.src= "https://" + document.getElementById("txtUrl").value;
-  }
-
-  // Home button functionality
-  function goHome() {
-	  var browserFrame = document.getElementById("browser");
-    browserFrame.src= "home.html";
-  }
-</script>
-
-<script>
-  // Enable navigation prompt
-  window.onbeforeunload = function() {
-      return true;
-  };
-</script>
+<script src="computer.js"></script>
+<script src="../confirmexit.js"></script>
 </head>
 
 <style>

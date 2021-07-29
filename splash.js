@@ -1,6 +1,6 @@
 var quotes=new Array()
 
-/* higher chance to say "cool website" */
+// higher chance to say "cool website"
 quotes[14]='cool website'
 quotes[15]='cool website'
 quotes[16]='cool website'
@@ -22,7 +22,7 @@ quotes[41]='cool website'
 quotes[42]='cool website'
 quotes[43]='cool website'
 
-/* splashes */
+// splashes
 quotes[0]='ding'
 
 quotes[1]='website cool'
@@ -51,7 +51,7 @@ quotes[12]='scary!!!'
 
 quotes[13]='"ILL KILL YOU!!!!!!" -octavo mary'
 
-/* skip 7 splashes */
+// skip 7 splashes
 
 quotes[21]='i spent way too much time on this'
 
@@ -61,7 +61,7 @@ quotes[23]='computer'
 
 quotes[24]='sus!'
 
-/* skip 2 splashes */
+// skip 2 splashes
 
 quotes[27]='So... * chunks, huh?'
 
@@ -79,7 +79,7 @@ quotes[33]='10 kills on the board right now'
 
 quotes[34]='bana'
 
-/* skip 9 splashes */
+// skip 9 splashes
 
 quotes[44]='mcdoanld'
 
@@ -91,8 +91,8 @@ quotes[47]='yknow..? im like,,, a little random.??'
 
 quotes[48]='bussin'
 
-/* code stuffs */
+// code stuffs
 var whichquote=Math.floor(Math.random()*(quotes.length))
 document.write(quotes[whichquote])
 
-/* script by JavaScript Kit http://javascriptkit.com */
+// script from JavaScript Kit http://javascriptkit.com Thanks!
