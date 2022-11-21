@@ -1,45 +1,168 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>cool website</title>
-<link rel="icon" href="icon.png">
+<title>Home page</title>
+<link rel="icon" href="img/banana.gif">
 <link rel="stylesheet" href="styles.css">
-<meta name="description" content="a cool epic website that is very cool (cool website)">
+<meta name="description" content="awesome web site :-)">
 <meta name="keywords" content="spinningbanana,cool website,spinningbanana github,github spinningbanana,spinningbanana cool website">
 <meta name="theme-color" content="#f0f5d8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <html lang="en">
+
+<style>
+	@media (max-width: 860px) {
+		.hidden-mobile {
+			display: none;
+		}
+	}
+
+	@media (min-width: 860px) {
+		.hidden-desktop {
+			display: none;
+		}
+	}
+
+	.musicgif {
+		visibility: hidden;
+		position: absolute;
+		margin-left: auto;
+		margin-right: auto;
+		left: -70px;
+		right: 0;
+		text-align: center;
+		z-index: -1
+	}
+
+	ul {
+		text-align: center;
+		padding-left: 10px;
+		padding-right: 10px;
+		width: 160px;
+	}
+
+	li {
+		text-align: center;
+	}
+
+	.mid {
+		position: absolute;
+		left: 50%;
+		transform: translate(-50%, 0);
+		z-index: 0;
+	}
+
+	.topad {
+		position: absolute;
+		right: 10px;
+	}
+</style>
+<script src = "randomize.js"></script>
+<script>
+function play() {
+	var audio = document.getElementById("audio");
+	var buttonElement = document.getElementById("music");
+	var musicGif = document.getElementById("musicgif");
+	audio.loop = false;
+	
+	if (audio.paused == true) {
+		audio.play();
+		musicGif.style.visibility = 'visible';
+		buttonElement.src = "img/banana_dance.gif";
+	} else {
+		audio.pause();
+		musicGif.style.visibility = 'hidden';
+		buttonElement.src = "img/banana.gif";
+	}
+	
+	audio.addEventListener("ended", function(){
+		musicGif.style.visibility = 'hidden';
+		buttonElement.src = "img/banana.gif";
+	});
+}
+</script>
 </head>
 <body>
 
-<div id="borderbox">
-	<div class="headerbox">
-		<h1>Home</h1>
-		<p>Hello, welcome to my website! Come mess around for a while.<p>
-	</div>
+<!--title-->
+<center>
+<img src="img/title.gif" width = "300" height "150">
+<br>
+<input type="image" id="music" src="img/banana.gif" width="32" height="32" onclick="play()">
+<img id="musicgif" class="musicgif" src="img/music.gif" width="51" height="32">
+<audio id="audio" src="img/acybersworld.mp3"></audio>
+</center>
 
-	<div style="line-height:5px;">
-		<br>
-	</div>
+<!--web site-->
+<hr>
+<center>
+<p> 
+<b>Welcome to my web site!</b>
+<br>
+Here you can access a bunch of my silly projects, enjoy!
+</p>
+<br>
+<table border="1">
+<td><ul style="list-style-type:none;">
+<li><b>Games</b></li>
+<div id = "games">
+<li><a href="games/puzzlegame">Puzzle Game</a></li>
+<li><a href="games/cubeplatformer">Cube Platformer</a></li>
+<li><a href="games/sds">SODA DRINKING SIMULATOR</a></li>
+</div>
+<li id = "mobilewarn"></li>
+</ul>
+</td><td><ul style="list-style-type:none;">
+<li><b>Other</b></li>
+<li><a href="#">Computer</a></li>
+<li><a href="other/stopwatch">Stopwatch</a></li>
+<br>
+<br>
+</ul>
+</tr>
+</table>
+</center>
+<br>
 
-	<div class="infobox">
-		<h1>Navigation</h1>
-		
-		<a href="https://spinningbanana.github.io/games"><p style="text-align:center">Games</a>
-		<a href="https://spinningbanana.github.io/radio"><p style="text-align:center">Radio</a></br>
-		<a href="https://spinningbanana.github.io/computer"><p style="text-align:center">Computer</a></br>
-		<a href="https://spinningbanana.github.io/stopwatch"><p style="text-align:center">Stopwatch</a>
+<script>
+// Detects if the user is on a mobile device
+if (/Mobile|Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+    document.getElementById("games").remove()
+	document.getElementById("mobilewarn").innerHTML = "games do not work on mobile :("
+}
+</script>
 
-	</div>
+<hr>
+<!--"ads"-->
+<div class="topad">
+<a href = "https://en.wikipedia.org/wiki/Yahoo!_GeoCities" target="_blank" rel="noopener noreferrer">
+<img src="img/yahoo.gif" height = "100"></a></div>
+
+<div class="mid"><a id="bannerLink" href="">
+<img id="banner" border="0" src="img/banners/nojs.png" class="hidden-mobile" alt="pls enable javascript" width="450" height="75"></a>
 </div>
 
-<p class="bottom">Issues? Report them <a href="https://github.com/spinningbanana/spinningbanana.github.io/issues">here</a></p>
-<div class="bottomright">
-	<script language="JavaScript1.1" src="https://spinningbanana.github.io/splash.js">
-		/* epic */
-	</script>
-	<noscript>psst... hey, javascript is disabled on your browser. you wont be able to do much on here without it</noscript>
-</div>
+<!--banners for other web site-->
+<a href="https://helloimbanana.neocities.org/" target="_blank" rel="noopener noreferrer">
+<img src="img/bananaclub.gif" alt="Banana!" border="0" width="88" height="31"></a>
 
+<a href="https://qmaury.com/" target="_blank" rel="noopener noreferrer">
+<img src="img/qmauryaffiliatebannertux.gif" alt="QMAURY" border="0" width="88" height="31"></a>
+<br>
+<!------------------------------------->
+<a href="https://spinningbanana.github.io/">
+<img border="0" src="img/spinningbanana.png" alt="cool website" height="31" width="88"></a>
+<img src="img/construction.gif" alt="UNDER CONSTRUCTION" border="0" width="88" height="31">
+<br>
+<!------------------------------------->
+<a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fspinningbanana.github.io%2F" target="_blank" rel="noopener noreferrer">
+<img border="0" src="img/vh32.png" alt="BAD MARK!!" height="31" width="88"></a>
+	
+<a href="http://textures.neocities.org" target="_blank" rel="noopener noreferrer">
+<img src="img/texturetown.gif" alt="Textures!" border="0" width="88" height="31"></a>
+
+
+<center><a id="bannerLinkM" href="">
+<img id="bannerM" border="0" src="img/banners/nojs.png" class="hidden-desktop" alt="pls enable javascript" width="300" height="50"></a></center>
 </body>
 </html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SALE!</title>
+<link rel="icon" href="img/forsale/money.gif">
+<link rel="stylesheet" href="styles.css">
+<meta name="description" content="YOU DON'T WANNA MISS OUT!!!">
+<meta name="theme-color" content="#f0f5d8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+</head>
+
+<style>
+h1 {
+	font-size: 50px;
+	color: red;
+}
+
+p {
+	font-size: 25px;
+	color: white;
+}
+
+body {
+	background-image: url('img/forsale/bg.png');
+	background-size: auto;
+}
+
+a.disabled { cursor: not-allowed; color: #555555; }
+</style>
+<script>
+var audio1 = new Audio("img/forsale/chaching.mp3")
+var audio2 = new Audio("img/forsale/buzzer.mp3")
+var audio3 = new Audio("img/forsale/bone.mp3")
+var cycles = 0
+function purchase() {
+	var element = document.getElementById("purchase");
+	if (cycles ==0) {
+		element.innerHTML = "An error occurrred. nPurchase SOrry!. <img src='img/forsale/money.gif'></img>";
+		cycles++;
+		audio1.play();
+		audio2.play();
+	} else if (cycles==1) {
+		element.innerHTML = "STOP <img src='img/forsale/money.gif'></img>";
+		cycles++;
+		audio1.play();
+		audio2.play();
+	} else if (cycles==2) {
+		element.class = "disabled"
+		element.innerHTML = "ANerror OCcured an error occured an error occured an error occured an error occured an error occured an error occured an error occured <img src='img/forsale/deadashell.gif' width='32' height=='32'></img>";
+		cycles++;
+		audio3.play();
+	}
+}
+</script>
+<body>
+<i><h1>SALE! SALE! SALE!</h1></i>
+<p>
+YOU ABSOLUTELY DO NOT WANT TO MISS OUT ON THIS ONE OF A KIND DEAL!!! THE VALUE ONLY GOES UP!
+<br>
+<a onclick="purchase()" id = "purchase">PURCHASE.NOW!!!!><img src="img/forsale/money.gif"></img></a>
+<br>
+<br>
+I would say that this is a great investment for you and your family. The price is very affordable and the value will only go up in time. This painting has been professionally framed with a high quality, black wood frame. I personally have hung it on my wall to display it proudly! This painting measures approximately 12" x 15". It will be shipped rolled in a tube via USPS First Class Mail (2-3 days).
+<br>
+<br>
+YOU WILL NOT BE DISAPPOINTED! A MUST HAVE FOR ANY COLLECTION!!!
+ABSOLUTELY STUNNING PAINTING OF THE HOMELAND, BY An ARTIST WHO IS FAMOUS FOR HIS LARGE SCALE PAINTINGS. THIS ONE OF A KIND PAINTING IS IN GREAT CONDITION AND VERY ATTRACTIVE. IT HAS ALL THE CHARACTERISTICS THAT MAKE THIS ARTIST SO POPULAR AND NAMED AFTER HIMSELF. DON'T MISS OUT ON THIS ONE OF A KIND DEAL!!
+<br>
+<br>
+DON'T MISS OUT ON THIS ONE OF A KIND DEAL!!?
+</p>
+
+<p>
+<img src = "img/forsale/valuable.png"></img>
+THE PAINTING (DO NOT DOWN LOAD) 
+</p>
+</body>
+</html>
