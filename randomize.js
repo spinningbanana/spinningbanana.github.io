@@ -1,7 +1,4 @@
-window.onload = randomize;
-
-function randomize(){
-	var adImageElement = document.getElementById("banner");
+var adImageElement = document.getElementById("banner");
 	var adLinkElement = document.getElementById("bannerLink");
 	
 	//ad display on mobile
@@ -49,4 +46,3 @@ function randomize(){
 	adImageElementM.src = ads[whichad]["src"];
 	adImageElementM.alt = ads[whichad]["alt"];
 	adLinkElementM.href = ads[whichad]["link"];
-}
