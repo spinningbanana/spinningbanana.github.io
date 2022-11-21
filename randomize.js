@@ -42,6 +42,7 @@ if (isMobile==false) {
 		"alt": "You know the puzzle game, the label is usually the time it’s available in your browser is in and multiplayer game. It is a fantastic, players of all skill levels, clone Tetr.io on the other side features a variety of loathsome things. If you want to sharpen your skills in the Sprint mode, or you’d like a short session of Marathon to act Tetr.io has you covered.Tetr.io what makes it so special level of each player has a developer. Minute details like a soft cast and will do well affairs Manual shift and can not wait to be car"
 	};
 } else {
+	console.log("mobile")
 	ad1 = {
 		"src": "img/banners/webring_compressed.gif",
 		"link": "https://deltarune.com/code/",
