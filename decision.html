@@ -22,41 +22,45 @@ body {
 }
 </style>
 <script>
-var decision = Math.floor(Math.random()*2);
-var decided = false;
-
 var audio;
-if (decision == 0) {
-	audio = new Audio('img/decision/crowd_gasp.mp3');
-} else {
-	audio = new Audio('img/decision/crowd_ahh.mp3');
-}
+var playing = false;
 function play() {
-	audio.play();
-	
-	if (decided == true) { return };
-	var img = document.getElementById("button");
-	var p = document.getElementById("text");
-	
-	var link = document.querySelector("link[rel~='icon']");
-	
-	if (decision == 0){
-		document.title = "No thanks !";
-		link.href = 'img/decision/face_lost.png';
-		img.src = "img/decision/face_lost.png";
-		p.innerHTML = "Sex with men? No thanks !";
+	if (playing == false) {
+		var decision = Math.floor(Math.random()*2);
+		if (decision == 0) {
+			audio = new Audio('img/decision/crowd_gasp.mp3');
+		} else {
+			audio = new Audio('img/decision/crowd_ahh.mp3');
+		}
+		audio.play();
+		playing = true;
+		audio.addEventListener("ended", function() {
+			console.log("ended")
+			playing = false;
+		})
+		var img = document.getElementById("button");
+		var p = document.getElementById("text");
 		
-		document.body.style.backgroundColor = "black";
-		p.style.color = "#ffffff";
-	} else {
-		document.title = "Yes please!";
-		link.href = 'img/decision/face-won.png';
-		img.src = "img/decision/face-won.png";
-		p.innerHTML = "Sex with women? Yes please!";
+		var link = document.querySelector("link[rel~='icon']");
 		
-		document.body.style.backgroundColor = "white";
-	}
-	decided == true;
+		if (decision == 0){
+			document.title = "No thanks !";
+			link.href = 'img/decision/face_lost.png';
+			img.src = "img/decision/face_lost.png";
+			p.innerHTML = "Sex with men? No thanks !";
+			
+			document.body.style.backgroundColor = "black";
+			p.style.color = "#ffffff";
+		} else {
+			document.title = "Yes please!";
+			link.href = 'img/decision/face-won.png';
+			img.src = "img/decision/face-won.png";
+			p.innerHTML = "Sex with women? Yes please!";
+			
+			document.body.style.backgroundColor = "white";
+			p.style.color = "#000000";
+		}
+	}	
 }
 </script>
 </head>
