@@ -62,7 +62,7 @@
 			text-align: center;
 			padding-left: 10px;
 			padding-right: 10px;
-			width: 145px;
+			width: 135px;
 		}
 	}
 
@@ -148,22 +148,14 @@ Here you can access a bunch of my silly projects, enjoy!
 </center>
 <br>
 
-<script>
-// Detects if the user is on a mobile device
-if (/Mobile|Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
-    document.getElementById("games").remove()
-	document.getElementById("mobilewarn").innerHTML = "games do not work on mobile :(<br><br><br>"
-}
-</script>
-
 <hr>
 <!--"ads"-->
 <div class="topad">
 <a href = "https://en.wikipedia.org/wiki/Yahoo!_GeoCities" target="_blank" rel="noopener noreferrer">
-<img src="img/yahoo.gif" height = "100"></a></div>
+<img src="img/yahoo.gif" height = "100" alt = "rip geocities"></a></div>
 
 <div class="mid"><a id="bannerLink" href="">
-<img id="banner" border="0" src="img/banners/loading.gif" class="hidden-mobile" alt="pls enable javascript" width="450" height="75"></a>
+<img id="banner" border="0" src="img/banners/loading.gif" class="hidden-mobile" alt="pls enable javascript" width="400" height="75"></a>
 </div>
 
 <!--banners for other web site-->
@@ -193,12 +185,19 @@ if (/Mobile|Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windo
 	</center>
 </div>
 <div class = "tabletbelow">
-	<center><p><b>Recommended to view the website on a larger screen</b></p></center>
+	<center><p id = "recommendation"><b>Recommended to view the website at a higher resolution</b></p></center>
 </div>
 <noscript>
 	<center><b><p>Please turn on javascript</p></b></center>
 </noscript>
-
+<script>
+	// Detects if the user is on a mobile device
+	if (/Mobile|Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+		document.getElementById("games").remove()
+		document.getElementById("mobilewarn").innerHTML = "games do not work on mobile :(<br><br><br>"
+		document.getElementById("recommendation").innerHTML = "<b>Recommended to view the website on a larger screen</b>"
+	}
+</script>
 <script src = "randomize.js"></script>
 </body>
 </html>
