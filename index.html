@@ -1,206 +1,224 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Home Page</title>
-<link rel="icon" href="img/banana.gif">
-<link rel="stylesheet" href="styles.css">
-<meta name="description" content="awesome web site :-)">
-<meta name="keywords" content="spinningbanana,cool website,spinningbanana github,github spinningbanana,spinningbanana cool website">
-<meta name="theme-color" content="#f0f5d8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta property="og:image" content="img/spinningbanana.png">
-<html lang="en">
+	<title>Home Page</title>
+	<link rel="icon" href="img/banana.gif">
+	<link rel="stylesheet" href="styles.css">
+	<meta name="description" content="awesome web site :-)">
+	<meta name="keywords"
+		content="spinning banana, spinningbanana,cool website,spinningbanana github,github spinningbanana,spinningbanana cool website">
+	<meta name="theme-color" content="#f0f5d8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta property="og:image" content="img/spinningbanana.png">
+	<html lang="en">
 
-<style>
-	.smol {
-		font-size: 10px;
-	}
-	
-	@media (max-width: 800px) {
-		.hidden-mobile {
-			display: none;
+	<style>
+		.smol {
+			font-size: 10px;
 		}
-	}
 
-	@media (min-width: 800px) {
-		.hidden-desktop {
-			display: none;
+		@media (max-width: 800px) {
+			.hidden-mobile {
+				display: none;
+			}
 		}
-	}
 
-	@media (min-width: 768px) {
-		.tabletbelow {
-			display: none;
+		@media (min-width: 801px) {
+			.hidden-desktop {
+				display: none;
+			}
 		}
-	}
 
-	.musicgif {
-		visibility: hidden;
-		position: absolute;
-		margin-left: auto;
-		margin-right: auto;
-		left: -70px;
-		right: 0;
-		text-align: center;
-		z-index: -1
-	}
+		@media (min-width: 768px) {
+			.tabletbelow {
+				display: none;
+			}
+		}
 
-	ul {
-		text-align: center;
-		padding-left: 10px;
-		padding-right: 10px;
-		width: 160px;
-	}
+		.musicgif {
+			visibility: hidden;
+			position: absolute;
+			margin-left: auto;
+			margin-right: auto;
+			left: -70px;
+			right: 0;
+			text-align: center;
+			z-index: -1
+		}
 
-	@media (min-width: 400px){
 		ul {
 			text-align: center;
 			padding-left: 10px;
 			padding-right: 10px;
 			width: 160px;
 		}
-	}
 
-	@media (max-width: 400px){
-		ul {
-			text-align: center;
-			padding-left: 10px;
-			padding-right: 10px;
-			width: 135px;
+		@media (min-width: 400px) {
+			ul {
+				text-align: center;
+				padding-left: 10px;
+				padding-right: 10px;
+				width: 160px;
+			}
 		}
-	}
 
-	li {
-		text-align: center;
-	}
+		@media (max-width: 400px) {
+			ul {
+				text-align: center;
+				padding-left: 10px;
+				padding-right: 10px;
+				width: 135px;
+			}
+		}
 
-	.mid {
-		position: absolute;
-		left: 50%;
-		transform: translate(-50%, 0);
-		z-index: 0;
-	}
+		li {
+			text-align: center;
+		}
 
-	.topad {
-		position: absolute;
-		right: 10px;
-	}
-</style>
-<script>
-function play() {
-	var audio = document.getElementById("audio");
-	var buttonElement = document.getElementById("music");
-	var musicGif = document.getElementById("musicgif");
-	audio.loop = false;
-	
-	if (audio.paused == true) {
-		audio.play();
-		musicGif.style.visibility = 'visible';
-		buttonElement.src = "img/banana_dance.gif";
-	} else {
-		audio.pause();
-		musicGif.style.visibility = 'hidden';
-		buttonElement.src = "img/banana.gif";
-	}
-	
-	audio.addEventListener("ended", function(){
-		musicGif.style.visibility = 'hidden';
-		buttonElement.src = "img/banana.gif";
-	});
-}
-</script>
+		.mid {
+			position: absolute;
+			left: 50%;
+			transform: translate(-50%, 0);
+			z-index: 0;
+		}
+
+		.topad {
+			position: absolute;
+			right: 10px;
+		}
+	</style>
+	<script>
+		function play() {
+			var audio = document.getElementById("audio");
+			var buttonElement = document.getElementById("music");
+			var musicGif = document.getElementById("musicgif");
+			audio.loop = false;
+
+			if (audio.paused == true) {
+				audio.play();
+				musicGif.style.visibility = 'visible';
+				buttonElement.src = "img/banana_dance.gif";
+			} else {
+				audio.pause();
+				musicGif.style.visibility = 'hidden';
+				buttonElement.src = "img/banana.gif";
+			}
+
+			audio.addEventListener("ended", function () {
+				musicGif.style.visibility = 'hidden';
+				audio.src = "img/titanicmonarch.mp3"
+				buttonElement.src = "img/banana.gif";
+			});
+		}
+	</script>
 </head>
+
 <body>
 
-<!--title-->
-<center>
-<img src="img/title.gif" width = "300" height "150">
-<br>
-<input type="image" id="music" src="img/banana.gif" width="32" height="32" onclick="play()">
-<img id="musicgif" class="musicgif" src="img/music.gif" width="51" height="32">
-<audio id="audio" src="img/acybersworld.mp3"></audio>
-</center>
-
-<!--web site-->
-<hr>
-<center>
-<p> 
-<b>Welcome to my web site!</b>
-<br>
-Here you can access a bunch of my silly projects, enjoy!
-</p>
-<table border="1">
-<td><ul style="list-style-type:none;">
-<li><b>Games</b></li>
-<div id = "games">
-<li><a href="games/puzzlegame">Puzzle Game</a></li>
-<li><a href="games/cubeplatformer">Cube Platformer</a></li>
-<li><a href="games/sds">SODA DRINKING SIMULATOR</a></li>
-<li><a href="games/eds">EGGNOG DRINKING SIMULATOR</a></li>
-</div>
-<li id = "mobilewarn"></li>
-</ul>
-</td><td><ul style="list-style-type:none;">
-<li><b>Other</b></li>
-<li><a href="other/computer">Computer</a></li>
-<li><a href="other/stopwatch">Stopwatch</a></li>
-<br>
-<br>
-<br>
-<br>
-</ul>
-</tr>
-</table>
-</center>
-<br>
-<noscript><b><p class="smol">Please enable javascript!</p></b></noscript>
-<hr>
-
-<!--"ads"-->
-<div class="topad">
-<a href = "https://en.wikipedia.org/wiki/Yahoo!_GeoCities" target="_blank" rel="noopener noreferrer">
-<img src="img/yahoo.gif" height = "100" alt = "rip geocities"></a></div>
-
-<div class="mid"><a id="bannerLink" href="">
-<img id="banner" border="0" src="img/banners/loading.gif" class="hidden-mobile" alt="pls enable javascript" width="400" height="75"></a>
-</div>
-
-<!--banners for other web site-->
-<a href="https://helloimbanana.neocities.org/" target="_blank" rel="noopener noreferrer">
-<img src="img/bananaclub.gif" alt="Banana!" border="0" width="88" height="31"></a>
-
-<a href="https://qmaury.com/" target="_blank" rel="noopener noreferrer">
-<img src="img/qmauryaffiliatebannertux.gif" alt="QMAURY" border="0" width="88" height="31"></a>
-<br>
-<!------------------------------------->
-<a href="https://spinningbanana.github.io/">
-<img border="0" src="img/spinningbanana.png" alt="cool website" height="31" width="88"></a>
-<img src="img/construction.gif" alt="UNDER CONSTRUCTION" border="0" width="88" height="31">
-<br>
-<!------------------------------------->
-<a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fspinningbanana.github.io%2F" target="_blank" rel="noopener noreferrer">
-<img border="0" src="img/vh32.png" alt="BAD MARK!!" height="31" width="88"></a>
-	
-<a href="http://textures.neocities.org" target="_blank" rel="noopener noreferrer">
-<img src="img/texturetown.gif" alt="Textures!" border="0" width="88" height="31"></a>
-
-<div class = "hidden-desktop">
+	<!--title-->
 	<center>
-		<a id="bannerLinkM" href="">
-			<img id="bannerM" border="0" src="img/banners/loading.gif" alt="pls enable javascript" width="300" height="50">
-		</a>
+		<img src="img/title.gif" width="300" height "150">
+		<br>
+		<input type="image" id="music" src="img/banana.gif" width="32" height="32" onclick="play()">
+		<img id="musicgif" class="musicgif" src="img/music.gif" width="51" height="32">
+		<audio id="audio" src="img/acybersworld.mp3"></audio>
 	</center>
-</div>
-<div class = "tabletbelow">
-	<center><p id = "recommendation"><b>Recommended to view the website at a higher resolution</b></p></center>
-</div>
-<script>
-	// Detects if the user is on a mobile device
-	if (/Mobile|Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
-		document.getElementById("games").remove()
-		document.getElementById("mobilewarn").innerHTML = "games do not work on mobile :(<br><br><br><br><br>"
-	}
-</script>
-<script src = "randomize.js"></script>
+
+	<!--web site-->
+	<hr>
+	<center>
+		<p>
+			<b>Welcome to my web site!</b>
+			<br>
+			You can find some of my projects here, have fun.
+		</p>
+		<table border="1">
+			<td>
+				<ul style="list-style-type:none;">
+					<li><b>Games</b></li>
+					<div id="games">
+						<li><a href="games/puzzlegame">Puzzle Game</a></li>
+						<li><a href="games/cubeplatformer">Cube Platformer</a></li>
+						<li><a href="games/sds">SODA DRINKING SIMULATOR</a></li>
+						<li><a href="games/eds">EGGNOG DRINKING SIMULATOR</a></li>
+					</div>
+					<div id = "mobilewarn"></div>
+				</ul>
+			</td>
+			<td>
+				<ul style="list-style-type:none;">
+					<li><b>Other</b></li>
+					<li><a href="other/computer">Computer</a></li>
+					<li><a href="other/stopwatch">Stopwatch</a></li>
+					<br>
+					<br>
+					<br>
+					<br>
+				</ul>
+				</tr>
+		</table>
+	</center>
+	<br>
+	<noscript><b>
+			<center>
+				<p class="smol">Please enable javascript!</p>
+			</center>
+		</b></noscript>
+	<hr>
+
+	<!--"ads"-->
+	<div class="topad">
+		<a href="https://en.wikipedia.org/wiki/Yahoo!_GeoCities" target="_blank" rel="noopener noreferrer">
+			<img src="img/yahoo.gif" height="100" alt="rip geocities"></a>
+	</div>
+
+	<div class="mid"><a id="bannerLink" href="">
+			<img id="banner" border="0" src="img/banners/loading.gif" class="hidden-mobile" alt="pls enable javascript"
+				width="400" height="75"></a>
+	</div>
+
+	<!--banners for other web site-->
+	<a href="https://helloimbanana.neocities.org/" target="_blank" rel="noopener noreferrer">
+		<img src="img/bananaclub.gif" alt="Banana!" border="0" width="88" height="31"></a>
+
+	<a href="https://qmaury.com/" target="_blank" rel="noopener noreferrer">
+		<img src="img/qmauryaffiliatebannertux.gif" alt="QMAURY" border="0" width="88" height="31"></a>
+	<br>
+	<!------------------------------------->
+	<a href="https://spinningbanana.github.io/">
+		<img border="0" src="img/spinningbanana.png" alt="cool website" height="31" width="88"></a>
+	<img src="img/construction.gif" alt="UNDER CONSTRUCTION" border="0" width="88" height="31">
+	<br>
+	<!------------------------------------->
+	<a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fspinningbanana.github.io%2F" target="_blank"
+		rel="noopener noreferrer">
+		<img border="0" src="img/vh32.png" alt="BAD MARK!!" height="31" width="88"></a>
+
+	<a href="http://textures.neocities.org" target="_blank" rel="noopener noreferrer">
+		<img src="img/texturetown.gif" alt="Textures!" border="0" width="88" height="31"></a>
+
+	<div class="hidden-desktop">
+		<center>
+			<a id="bannerLinkM" href="">
+				<img id="bannerM" border="0" src="img/banners/loading.gif" alt="pls enable javascript" width="300"
+					height="50">
+			</a>
+		</center>
+	</div>
+	<div class="tabletbelow">
+		<center>
+			<p id="recommendation"><b>Recommended to view the website at a higher resolution</b></p>
+		</center>
+	</div>
+	<script>
+		// Detects if the user is on a mobile device
+		if (/Mobile|Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+			document.getElementById("games").remove()
+			document.getElementById("mobilewarn").innerHTML = "games do not work on mobile :(<br><br><br><br><br>"
+		}
+	</script>
+	<script src="randomize.js"></script>
 </body>
+
 </html>

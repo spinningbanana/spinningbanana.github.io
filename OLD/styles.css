@@ -1,14 +1,13 @@
 /*background and formatting*/
 body {
-  background-image: linear-gradient(
-  45deg, 
-  #f0f5d8 25%, 
-  #e5ebca 25%, 
-  #e5ebca 50%, 
-  #f0f5d8 50%, 
-  #f0f5d8 75%, 
-  #e5ebca 75%, 
-  #e5ebca 100%);
+  background-image: linear-gradient(45deg,
+      #f0f5d8 25%,
+      #e5ebca 25%,
+      #e5ebca 50%,
+      #f0f5d8 50%,
+      #f0f5d8 75%,
+      #e5ebca 75%,
+      #e5ebca 100%);
   background-size: 141.42px 141.42px;
 }
 
@@ -45,7 +44,7 @@ img {
 iframe {
   border-style: solid;
   border-width: 5px;
-  border-color: rgba(200,200,150,0.7);
+  border-color: rgba(200, 200, 150, 0.7);
   padding: 0px;
   margin: auto;
   display: block;
@@ -82,6 +81,7 @@ a:active {
   position: fixed;
   bottom: 0;
 }
+
 .bottom2 {
   font-size: 10px;
   position: fixed;
@@ -140,7 +140,7 @@ a:active {
   border-style: solid;
   border-width: 5px;
   border-color: #d14f4f;
-  background: rgba(200,0,0,0.3);
+  background: rgba(200, 0, 0, 0.3);
   width: 70%;
   min-width: 250px;
   padding: 2px;
@@ -151,8 +151,8 @@ a:active {
 .headerbox {
   border-style: solid;
   border-width: 5px;
-  border-color: rgba(200,200,150,0.5);
-  background: rgba(200,200,150,0.2);
+  border-color: rgba(200, 200, 150, 0.5);
+  background: rgba(200, 200, 150, 0.2);
   width: 70%;
   min-width: 250px;
   padding: 2px;
@@ -163,8 +163,8 @@ a:active {
 .headerboxsmall {
   border-style: solid;
   border-width: 5px;
-  border-color: rgba(200,200,150,0.5);
-  background: rgba(200,200,150,0.2);
+  border-color: rgba(200, 200, 150, 0.5);
+  background: rgba(200, 200, 150, 0.2);
   width: 40%;
   max-width: 500px;
   min-width: 250px;
@@ -176,8 +176,8 @@ a:active {
 .infobox {
   border-style: solid;
   border-width: 5px;
-  border-color: rgba(200,200,150,0.5);
-  background: rgba(200,200,150,0.2);
+  border-color: rgba(200, 200, 150, 0.5);
+  background: rgba(200, 200, 150, 0.2);
   width: 70%;
   min-width: 250px;
   padding: 2px;
@@ -185,11 +185,11 @@ a:active {
   margin-right: auto;
 }
 
-.infoboxsmall{
+.infoboxsmall {
   border-style: solid;
   border-width: 5px;
-  border-color: rgba(200,200,150,0.5);
-  background: rgba(200,200,150,0.2);
+  border-color: rgba(200, 200, 150, 0.5);
+  background: rgba(200, 200, 150, 0.2);
   width: 18%;
   max-width: 400px;
   min-width: 100px;
@@ -198,7 +198,7 @@ a:active {
   margin-right: auto;
 }
 
-.timerDisplay{
+.timerDisplay {
   padding: 10px;
   text-align: center;
   font-family: verdana;
@@ -208,16 +208,16 @@ a:active {
   margin-right: auto;
 }
 
-.buttons{
+.buttons {
   width: 30%;
   margin-left: auto;
   margin-right: auto;
-  display:flex;
+  display: flex;
   justify-content: space-around;
-  padding:10px
+  padding: 10px
 }
 
-.buttons button{
+.buttons button {
   background-color: #f0f5d8;
   color: #000000;
   border: none;
@@ -236,7 +236,7 @@ a:active {
 
 .alert1 {
   padding: 5px;
-  background-color: rgba(200,0,0,0.5);
+  background-color: rgba(200, 0, 0, 0.5);
   color: black;
   margin-bottom: 15px;
   font-family: verdana;
@@ -246,7 +246,7 @@ a:active {
 
 .alert2 {
   padding: 5px;
-  background-color: rgba(200,0,0,0.4);
+  background-color: rgba(200, 0, 0, 0.4);
   color: black;
   margin-bottom: 15px;
   font-family: verdana;
