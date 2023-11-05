@@ -16,35 +16,35 @@ ad1 = {
 	"link": "https://deltarune.com/code/",
 	"alt": "This site is part of a game glitches and secrets Web Ring!",
 	"title": "Games, glitches, and secrets blog"
-};
+}
 
 ad2 = {
 	"src": "img/banners/superemail.gif",
 	"link": "https://siderealplexus.com/",
 	"alt": "SUPER EMAIL",
 	"title": "More information"
-};
+}
 
 ad3 = {
 	"src": "img/banners/SALE.gif",
 	"link": "forsale",
 	"alt": "SALE!",
 	"title": "SALE! SALE! SALE!"
-};
+}
 
 ad4 = {
 	"src": "img/banners/fish.gif",
 	"link": "fish",
 	"alt": "NATIONAL FISHING DAY!",
 	"title": "my favourite fish,,, the crap"
-};
+}
 
 ad5 = {
 	"src": "img/banners/tbucks.gif",
 	"link": "https://tetriotbucksgenerator.weebly.com/",
 	"alt": "You know the puzzle game, the label is usually the time it’s available in your browser is in and multiplayer game. It is a fantastic, players of all skill levels, clone Tetr.io on the other side features a variety of loathsome things. If you want to sharpen your skills in the Sprint mode, or you’d like a short session of Marathon to act Tetr.io has you covered.Tetr.io what makes it so special level of each player has a developer. Minute details like a soft cast and will do well affairs Manual shift and can not wait to be car",
 	"title": "You know the puzzle game, the label is usually the time it’s available in your browser is in and multiplayer game. It is a fantastic, players of all skill levels, clone Tetr.io on the other side features a variety of loathsome things. If you want to sharpen your skills in the Sprint mode, or you’d like a short session of Marathon to act Tetr.io has you covered.Tetr.io what makes it so special level of each player has a developer. Minute details like a soft cast and will do well affairs Manual shift and can not wait to be carefully adjusted – if only for what you are perfect for any casual player default options. Because the people are many, is the ultimate tetris Tetr.io all those who knew of the barrier but a poor man out of the abundance of his features and the rich man to the players. TETR.IO t-bucks Hack is a current version and has been vigorously tested on large amount of angles and now it's develop a many powerful online software to gain unpaid TETR.IO t-bucks that is merely a currency of TETR.IO. TETR.IO hack is updated regularly with databases and we've a easy and yet powerful system in position which supports us to have the free TETR.IO t-bucks in probably the most efficient and best likely way at that time in time. We assure you that it's 100 percent safe and secured way to have probably the most desired free TETR.IO t-bucks Hack. The each of new TETR.IO hack is currently updated on 2014. Which means the powerful backend is without a doubt compliant with the changes which occur at TETR.IO updates. TETR.IO hack is coded in the autoit and python languages. It takes no.net framework or different dependencies and will work on every browsers."
-};
+}
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -53,14 +53,14 @@ ad_secret1 = {
 	"link": "ANTI/",
 	"alt": "ANTI BANANA CLUB",
 	"title": "NO MORE!!"
-};
+}
 
 ad_secret2 = {
 	"src": "img/banners/wtf.gif",
 	"link": "https://myanimelist.net/profile/junnji",
 	"alt": "My anime list",
 	"title": "this guy is weird..."
-};
+}
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ads = [ad1, ad2, ad3, ad4, ad5];
