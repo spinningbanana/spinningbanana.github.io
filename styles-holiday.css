@@ -1,7 +1,8 @@
 /*background and formatting*/
 body {
-	background-image: url('img/red.jpg');
-	background-size: 100px 100px;
+  background: url("img/festive/snowbg.gif"), url("img/festive/red.jpg");
+  background-repeat: repeat, repeat; 
+	background-size: 480px 480px, 100px 100px;
 }
 
 p {
@@ -13,13 +14,15 @@ li {
 }
 
 .container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
 }
+
+
 
 .bottom {
   position: fixed;
