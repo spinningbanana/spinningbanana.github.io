@@ -46,6 +46,13 @@ ad5 = {
 	"title": "You know the puzzle game, the label is usually the time it’s available in your browser is in and multiplayer game. It is a fantastic, players of all skill levels, clone Tetr.io on the other side features a variety of loathsome things. If you want to sharpen your skills in the Sprint mode, or you’d like a short session of Marathon to act Tetr.io has you covered.Tetr.io what makes it so special level of each player has a developer. Minute details like a soft cast and will do well affairs Manual shift and can not wait to be carefully adjusted – if only for what you are perfect for any casual player default options. Because the people are many, is the ultimate tetris Tetr.io all those who knew of the barrier but a poor man out of the abundance of his features and the rich man to the players. TETR.IO t-bucks Hack is a current version and has been vigorously tested on large amount of angles and now it's develop a many powerful online software to gain unpaid TETR.IO t-bucks that is merely a currency of TETR.IO. TETR.IO hack is updated regularly with databases and we've a easy and yet powerful system in position which supports us to have the free TETR.IO t-bucks in probably the most efficient and best likely way at that time in time. We assure you that it's 100 percent safe and secured way to have probably the most desired free TETR.IO t-bucks Hack. The each of new TETR.IO hack is currently updated on 2014. Which means the powerful backend is without a doubt compliant with the changes which occur at TETR.IO updates. TETR.IO hack is coded in the autoit and python languages. It takes no.net framework or different dependencies and will work on every browsers."
 }
 
+ad6 = {
+	"src": "img/banners/jolly.gif",
+	"link": "",
+	"alt": "the jolliest ad ever",
+	"title": "Ho! Ho! Ho!"
+}
+
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ad_secret1 = {
