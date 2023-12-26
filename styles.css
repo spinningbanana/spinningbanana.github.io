@@ -13,6 +13,10 @@ body {
     transform: translateX(-50%) translateY(-50%);
 }
 
+.smol {
+	font-size: 10px;
+}
+
 .bottom {
   position: fixed;
   bottom: 4px;
