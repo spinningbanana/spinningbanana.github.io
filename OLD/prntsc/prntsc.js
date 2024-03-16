@@ -1,4 +1,3 @@
-const getMetaData = require('metadata-scraper')
 // FUNCTIONS
 function changeimage(newimage){
   document.getElementsByTagName("img")[0].src=newimage;
@@ -16,8 +15,5 @@ function rnd_link() {
       string += String.fromCharCode(rnd_char)
   }
   rUrl = 'https://prnt.sc/' + string + a + b + c + d
-
-  getMetaData(rUrl).then((data) => {
-	console.log(data)
-  })
+  console.log(rUrl)
 }
