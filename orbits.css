@@ -1,0 +1,102 @@
+.space { /* this is the container, basically */
+    position: relative;
+    max-width: 500px;
+    background-color: white;
+    overflow: hidden;
+}
+
+/* thanks Ryan!! https://stackoverflow.com/a/38464010 */
+.deform  {
+    width: 30%;
+    max-width: 200px;
+    aspect-ratio: 6/5;
+    max-height: 200px;
+    transform: scaleX(3);
+    border-radius: 50%;
+
+    pointer-events: none;
+    /*
+    outline-style:solid;
+    outline-width: 0.01px;
+    outline-color: black; */
+}
+
+.inner {
+    width: 150px;
+    height: 2px;
+    left: 0px;
+    top: 0px;
+    transform: scaleX(0.33);
+    pointer-events: all;
+}
+
+#spinningbanana {
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%) scaleX(0.33) scale(0.4);
+}
+
+/* 
+    this is probably not the best way to do this... oh well!
+    I couldnt figure out how to do iterations :/ 
+*/
+
+:root {
+    --count: 9; /* Total number of elements that are spinning around */
+    --duration: 17.5; /* duration of spin */
+}
+
+.rotate {
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    animation: circle calc(1s * var(--duration)) infinite linear; 
+    pointer-events: none;
+}
+
+.counterrotate {
+    width: 150px;
+    height: 2px; 
+    transform-origin: 50% 50%;
+    animation: ccircle calc(1s * var(--duration)) infinite linear; 
+}
+
+.delay-1 {
+    animation-delay: calc(-1s * (var(--duration) / var(--count)) * (var(--count) - 1));
+}
+.delay-2 {
+    animation-delay: calc(-1s * (var(--duration) / var(--count)) * (var(--count) - 2));
+}
+.delay-3 {
+    animation-delay: calc(-1s * (var(--duration) / var(--count)) * (var(--count) - 3));
+}
+.delay-4 {
+    animation-delay: calc(-1s * (var(--duration) / var(--count)) * (var(--count) - 4));
+}
+.delay-5 {
+    animation-delay: calc(-1s * (var(--duration) / var(--count)) * (var(--count) - 5));
+}
+.delay-6 {
+    animation-delay: calc(-1s * (var(--duration) / var(--count)) * (var(--count) - 6));
+}
+.delay-7 {
+    animation-delay: calc(-1s * (var(--duration) / var(--count)) * (var(--count) - 7));
+}
+.delay-8 {
+    animation-delay: calc(-1s * (var(--duration) / var(--count)) * (var(--count) - 8));
+}
+.delay-9 {
+    animation-delay: calc(-1s * (var(--duration) / var(--count)) * (var(--count) - 9));
+}
+
+@keyframes circle {
+    from { transform: rotateZ(360deg) }
+    to { transform: rotateZ(0deg) }
+}
+
+@keyframes ccircle {
+    from { transform: rotateZ(0deg) }
+    to { transform: rotateZ(360deg) }
+}
