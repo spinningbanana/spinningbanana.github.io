@@ -16,12 +16,25 @@ var audio = document.getElementById("audio");
 audio.volume = 0.2;
 
 var speed = 10000;
-var particles = 1;
+var particles = 0.5;
+var slider = document.getElementById("particleSlider");
+if (/Mobile|Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+	particles = 0;
+    slider.maxValue = 50;
+    slider.minValue = -50;
+}
 
 var button = document.getElementById("startButton");
 button.onclick = function() {
     button.remove();
     container.animate(
+        [{backgroundColor: "#ffffff"}, {backgroundColor: "#000000"}],
+        {duration: 500, fill: "forwards"}
+    );
+
+    var cover = document.getElementById("cover")
+    cover.style.visibility = "visible";
+    cover.animate(
         [{backgroundColor: "#ffffff"}, {backgroundColor: "#000000"}],
         {duration: 500, fill: "forwards"}
     );
@@ -38,12 +51,7 @@ function create(glow) {
         [{backgroundColor: "#ffffff"}, {backgroundColor: "#000000"}],
         {duration: 500, fill: "forwards"}
     );
-    var cover = document.getElementById("cover")
-    cover.style.visibility = "visible";
-    cover.animate(
-        [{backgroundColor: "#ffffff"}, {backgroundColor: "#000000"}],
-        {duration: 500, fill: "forwards"}
-    );
+    
     document.getElementById("slider").style.visibility = "visible";
 
     // ACCRETION DISC
@@ -214,7 +222,7 @@ function create(glow) {
     }
 }
 
-var slider = document.getElementById("particleSlider");
+
 slider.oninput = function() {
     particles = this.value / 100;
     //console.log(particles);
