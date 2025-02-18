@@ -2,56 +2,56 @@
 <html>
 
 <head>
-	<title>O</title>
-	<link rel="icon" href="../img/blackhole-icon.png">
+    <title>O</title>
+    <link rel="icon" href="../img/blackhole-icon.png">
     <link rel="stylesheet" href="supermassive.css">
     <meta name="description" content="black hole">
-	<meta name="keywords"
-		content="black hole, ascii black hole, spinningbanana black hole, css black hole, javascript black hole">
-	<meta name="theme-color" content="#000000">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta property="og:image" content="../img/blackhole-icon.png">
-	<html lang="en">
+    <meta name="keywords"
+        content="black hole, ascii black hole, spinningbanana black hole, css black hole, javascript black hole">
+    <meta name="theme-color" content="#000000">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="../img/blackhole-icon.png">
+    <html lang="en">
 </head>
 
 <!-- yummy analytics!! block this if you wish, sorry for the inconvenience -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-7WHQ7LHV8G"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-7WHQ7LHV8G');
+    gtag('config', 'G-7WHQ7LHV8G');
 </script>
 
 <body>
     <center>
-    <div class = "space" id="container">
-        <div class="buttoncontainer">
-            <button type="button" id="startButton">Begin</button>
-            <br>
-            <noscript>javascript is not enabled</noscript>
-        </div>
-        
-
-        <div class="hole" style = "visibility: hidden;" id="hole"></div></div>
-        <div class="bottomcover" style = "visibility: hidden;" id="cover"></div>
-
-        <div class="settingscontainer" style = "visibility: hidden;" id="slider">
-            <p>
-                Particles: <input type="range" min="0" max="100" value="50" class="slider" id="particleSlider">
+        <div class="space" id="container">
+            <div class="buttoncontainer">
+                <button type="button" id="startButton">Begin</button>
                 <br>
-                Glow (laggy): <input type="checkbox" id="glowCheckbox" value="Glow">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                Music: <input type="checkbox" id="musicCheckbox" value="Music" checked>
-            </p> 
+                <noscript>javascript is not enabled</noscript>
+            </div>
+
+
+            <div class="hole" style="visibility: hidden;" id="hole"></div>
+            <div class="bottomcover" style="visibility: hidden;" id="cover"></div>
+
+            <div class="settingscontainer" style="visibility: hidden;" id="slider">
+                <p>
+                    Particles: <input type="range" min="0" max="100" value="50" class="slider" id="particleSlider">
+                    <br>
+                    Glow (laggy): <input type="checkbox" id="glowCheckbox" value="Glow">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Music: <input type="checkbox" id="musicCheckbox" value="Music" checked>
+                </p>
+            </div>
+            <audio loop id="audio" src="../img/oedundleerdasmeer.mp3"></audio>
         </div>
-        <audio loop id="audio" src="../img/oedundleerdasmeer.mp3"></audio>
-	</div>
     </center>
-    
-    <a href = "../"><img src = "../img/buttons/spinningbanana.png" class = "credit"></img></a>
-    <script src = "supermassive.js"></script>
+
+    <a href="../"><img src="../img/buttons/spinningbanana.png" class="credit"></img></a>
+    <script src="supermassive.js"></script>
 </body>
 
 </html>
