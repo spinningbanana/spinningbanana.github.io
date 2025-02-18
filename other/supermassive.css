@@ -73,22 +73,61 @@ p {
     outline-color: red; */
 }
 
-.hole  {
-    position: absolute;
-    width: 12%;
-    max-width: 190px;
-    min-width: 80px;
-    aspect-ratio: 1;
-    max-height: 250px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-
-    pointer-events: none;
-
-    background-color: black;
+@media screen and (max-width:450px){
+    .hole  {
+        position: absolute;
+        width: 20%;
+        max-width: 190px;
+        min-width: 0px;
+        aspect-ratio: 1;
+        max-height: 250px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+    
+        pointer-events: none;
+    
+        background-color: black;
+    }
 }
+@media screen and (min-width:450px) and (max-width:680px){
+    .hole  {
+        position: absolute;
+        width: 23%;
+        max-width: 190px;
+        min-width: 0px;
+        aspect-ratio: 1;
+        max-height: 250px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+    
+        pointer-events: none;
+    
+        background-color: black;
+    }
+}
+@media screen and (min-width:680px){
+    .hole  {
+        position: absolute;
+        width: 35%;
+        max-width: 190px;
+        min-width: 0px;
+        aspect-ratio: 1;
+        max-height: 250px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0.9);
+        border-radius: 50%;
+    
+        pointer-events: none;
+    
+        background-color: black;
+    }
+}
+
 
 .bottomcover  {
     position: absolute;
