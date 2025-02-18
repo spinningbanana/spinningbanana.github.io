@@ -230,19 +230,11 @@ var glowCheckbox = document.getElementById("glowCheckbox");
 
 slider.oninput = function() {
     particles = this.value / 100;
-    if (isMobile) {
-        document.querySelectorAll('.outer').forEach(e => e.remove());
-        document.querySelectorAll('.topvert').forEach(e => e.remove());
-        document.querySelectorAll('.botvert').forEach(e => e.remove());
-        create(glowCheckbox.checked);
-    }
-    //console.log(particles);
-}
-slider.onmouseup = function() {
     document.querySelectorAll('.outer').forEach(e => e.remove());
     document.querySelectorAll('.topvert').forEach(e => e.remove());
     document.querySelectorAll('.botvert').forEach(e => e.remove());
     create(glowCheckbox.checked);
+    //console.log(particles);
 }
 
 glowCheckbox.onclick = function() {
