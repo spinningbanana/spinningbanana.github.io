@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Home Page</title>
+	<link rel="icon" href="img/banana.gif">
+    <link rel="stylesheet" href="supermassive.css">
+    <link rel="stylesheet" href="homepage.css">
+	<meta name="description" content="awesome web site :-)">
+	<meta name="keywords"
+		content="spinning banana, spinningbanana,cool website,spinningbanana github,github spinningbanana,spinningbanana cool website">
+	<meta name="theme-color" content="#f0f5d8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta property="og:image" content="img/spinningbanana.png">
+	<html lang="en">
+</head>
+
+<!-- yummy analytics!! block this if you wish, sorry for the inconvenience -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7WHQ7LHV8G"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7WHQ7LHV8G');
+</script>
+
+<body>
+    <center>
+    <div class = "space" id="container">
+        <div class="buttoncontainer">
+            <button type="button" id="startButton">Begin</button>
+            <br>
+            <noscript>javascript is not enabled</noscript>
+        </div>
+        
+
+        <div class="hole" style = "visibility: hidden;" id="hole"></div>
+        <div class="bottomcover" style = "visibility: hidden;" id="cover"></div>
+
+        <div class="settingscontainer" style = "visibility: hidden;" id="slider">
+            <p>
+                Particles: <input type="range" min="0" max="100" value="100" class="slider" id="particleSlider">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Glow (laggy): <input type="checkbox" id="glowCheckbox" value="Glow">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Music: <input type="checkbox" id="musicCheckbox" value="Music" checked>
+            </p> 
+        </div>
+        <audio loop id="audio" src="../img/oedundleerdasmeer.mp3"></audio>
+	</div>
+    </center>
+    
+    <a href = "../"><img src = "../img/buttons/spinningbanana.png" class = "credit"></img></a>
+    <script src = "supermassive.js"></script>
+</body>
+
+</html>
