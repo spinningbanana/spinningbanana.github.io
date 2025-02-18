@@ -18,10 +18,13 @@ audio.volume = 0.2;
 var speed = 10000;
 var particles = 0.5;
 var slider = document.getElementById("particleSlider");
+var isMobile = false;
 if (/Mobile|Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+    isMobile = true;
 	particles = 0;
-    slider.maxValue = 50;
-    slider.minValue = -50;
+    slider.max = 50;
+    slider.min = -50;
+    slider.value = 0;
 }
 
 var button = document.getElementById("startButton");
@@ -222,13 +225,19 @@ function create(glow) {
     }
 }
 
+var glowCheckbox = document.getElementById("glowCheckbox");
+
 
 slider.oninput = function() {
     particles = this.value / 100;
+    if (isMobile) {
+        document.querySelectorAll('.outer').forEach(e => e.remove());
+        document.querySelectorAll('.topvert').forEach(e => e.remove());
+        document.querySelectorAll('.botvert').forEach(e => e.remove());
+        create(glowCheckbox.checked);
+    }
     //console.log(particles);
 }
-
-var glowCheckbox = document.getElementById("glowCheckbox");
 slider.onmouseup = function() {
     document.querySelectorAll('.outer').forEach(e => e.remove());
     document.querySelectorAll('.topvert').forEach(e => e.remove());
