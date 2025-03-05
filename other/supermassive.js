@@ -21,32 +21,32 @@ var slider = document.getElementById("particleSlider");
 var isMobile = false;
 if (/Mobile|Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
     isMobile = true;
-	particles = -0.2;
+    particles = -0.2;
     slider.max = 20;
     slider.min = -60;
     slider.value = -20;
 }
 
 var button = document.getElementById("startButton");
-button.onclick = function() {
+button.onclick = function () {
     button.remove();
     container.animate(
-        [{backgroundColor: "#ffffff"}, {backgroundColor: "#000000"}],
-        {duration: 500, fill: "forwards"}
+        [{ backgroundColor: "#ffffff" }, { backgroundColor: "#000000" }],
+        { duration: 500, fill: "forwards" }
     );
 
     var cover = document.getElementById("cover")
     cover.style.visibility = "visible";
     cover.animate(
-        [{backgroundColor: "#ffffff"}, {backgroundColor: "#000000"}],
-        {duration: 500, fill: "forwards"}
+        [{ backgroundColor: "#ffffff" }, { backgroundColor: "#000000" }],
+        { duration: 500, fill: "forwards" }
     );
 
     var hole = document.getElementById("hole")
     hole.style.visibility = "visible";
     hole.animate(
-        [{backgroundColor: "#ffffff"}, {backgroundColor: "#000000"}],
-        {duration: 500, fill: "forwards"}
+        [{ backgroundColor: "#ffffff" }, { backgroundColor: "#000000" }],
+        { duration: 500, fill: "forwards" }
     );
 
     document.getElementById("slider").style.visibility = "visible";
@@ -61,19 +61,19 @@ function create(glow) {
     for (let i = 0; i < 200 + 300 * particles; i++) {
         var outer = document.createElement("div");
         outer.className = "outer";
-        
+
         var rotate = document.createElement("div");
         rotate.className = "rotate";
 
         var offset = Math.random() * -6 + 3.5;
         const orbitAnim = [
-            { 
+            {
                 transform: "scale(1) rotateZ(450deg) translateY(" + offset + "vw)"
             },
-            { 
+            {
                 transform: "scale(1) rotateZ(90deg) translateY(" + offset + "vw)",
             },
-        ]  
+        ]
         var del = Math.random() * -speed;
         const timing = {
             duration: speed,
@@ -110,7 +110,7 @@ function create(glow) {
             iterations: Infinity,
         }
 
-        outer.style = "animation: zCircle " + speed/1000 +"s infinite;" + "animation-delay: " + del/1000 + "s;";
+        outer.style = "animation: zCircle " + speed / 1000 + "s infinite;" + "animation-delay: " + del / 1000 + "s;";
 
         particle.animate(particleSpin, particleTiming);
 
@@ -124,7 +124,7 @@ function create(glow) {
     for (let i = 0; i < 100 + 100 * particles; i++) {
         var topvert = document.createElement("div");
         topvert.className = "topvert";
-        
+
         var toprotate = document.createElement("div");
         toprotate.className = "toprotate";
 
@@ -136,7 +136,7 @@ function create(glow) {
             { transform: "rotateZ(342deg) translateY(0vw) translateY(" + offset + "vw)", offset: 0.6 },
             { transform: "rotateZ(275deg) translateY(-1vw) translateY(" + offset + "vw)", offset: 0.8 },
             { transform: "rotateZ(270deg) translateY(-5vw) translateY(" + offset + "vw)" }
-        ]  
+        ]
         var del = Math.random() * -speed;
         const timing = {
             duration: speed,
@@ -167,7 +167,7 @@ function create(glow) {
             delay: del,
             iterations: Infinity,
         }
-        
+
         particle.animate(particleSpin, particleTiming);
 
         toprotate.appendChild(particle);
@@ -180,11 +180,11 @@ function create(glow) {
     for (let i = 0; i < 50 + 50 * particles; i++) {
         var botvert = document.createElement("div");
         botvert.className = "botvert";
-        
+
         var botrotate = document.createElement("div");
         botrotate.className = "botrotate";
 
-        var offset = Math.random() * -1.5 ;
+        var offset = Math.random() * -1.5;
         const orbitAnim = [
             { transform: "rotateZ(90deg) translateY(" + offset + "vw)" },
             { transform: "rotateZ(270deg) translateY(" + offset + "vw)" }
@@ -215,7 +215,7 @@ function create(glow) {
             delay: del,
             iterations: Infinity,
         }
-        
+
         particle.animate(particleSpin, particleTiming);
 
         botrotate.appendChild(particle);
@@ -228,7 +228,7 @@ function create(glow) {
 var glowCheckbox = document.getElementById("glowCheckbox");
 
 
-slider.oninput = function() {
+slider.oninput = function () {
     particles = this.value / 100;
     document.querySelectorAll('.outer').forEach(e => e.remove());
     document.querySelectorAll('.topvert').forEach(e => e.remove());
@@ -237,7 +237,7 @@ slider.oninput = function() {
     //console.log(particles);
 }
 
-glowCheckbox.onclick = function() {
+glowCheckbox.onclick = function () {
     document.querySelectorAll('.outer').forEach(e => e.remove());
     document.querySelectorAll('.topvert').forEach(e => e.remove());
     document.querySelectorAll('.botvert').forEach(e => e.remove());
@@ -245,8 +245,8 @@ glowCheckbox.onclick = function() {
 }
 
 var musicCheckbox = document.getElementById("musicCheckbox");
-musicCheckbox.onclick = function() {
-    if(this.checked) {
+musicCheckbox.onclick = function () {
+    if (this.checked) {
         audio.play();
     } else {
         audio.pause();

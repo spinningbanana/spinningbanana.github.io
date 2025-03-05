@@ -2,187 +2,229 @@
 <html>
 
 <head>
-	<title>Home Page</title>
-	<link rel="icon" href="img/banana.gif">
-	<link rel="stylesheet" href="styles.css">
+    <title>Home Page</title>
+    <link rel="icon" href="img/banana.gif">
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="orbits.css">
     <link rel="stylesheet" href="homepage.css">
-	<meta name="description" content="awesome web site :-)">
-	<meta name="keywords"
-		content="spinning banana, spinningbanana,cool website,spinningbanana github,github spinningbanana,spinningbanana cool website">
-	<meta name="theme-color" content="#f0f5d8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta property="og:image" content="img/spinningbanana.gif">
-	<html lang="en">
+    <meta name="description" content="awesome web site :-)">
+    <meta name="keywords"
+        content="spinning banana, spinningbanana,cool website,spinningbanana github,github spinningbanana,spinningbanana cool website">
+    <meta name="theme-color" content="#f0f5d8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="img/spinningbanana.gif">
+    <html lang="en">
 
-	<script>
-		function play() {
-			var audio = document.getElementById("audio");
-			var buttonElement = document.getElementById("music");
-			var musicGif = document.getElementById("musicgif");
-			audio.loop = false;
-			audio.volume = 0.5;
+    <script>
+        function play() {
+            var audio = document.getElementById("audio");
+            var buttonElement = document.getElementById("music");
+            var musicGif = document.getElementById("musicgif");
+            audio.loop = false;
+            audio.volume = 0.5;
 
-			if (audio.paused == true) {
-				audio.play();
-				musicGif.style.visibility = 'visible';
-				buttonElement.src = "img/banana_dance.gif";
-			} else {
-				audio.pause();
-				musicGif.style.visibility = 'hidden';
-				buttonElement.src = "img/banana.gif";
-			}
+            if (audio.paused == true) {
+                audio.play();
+                musicGif.style.visibility = 'visible';
+                buttonElement.src = "img/banana_dance.gif";
+            } else {
+                audio.pause();
+                musicGif.style.visibility = 'hidden';
+                buttonElement.src = "img/banana.gif";
+            }
 
-			audio.addEventListener("ended", function () {
-				musicGif.style.visibility = 'hidden';
-				audio.src = "img/titanicmonarch.mp3"
-				//audio.src = "img/festive/holiday.mp3"
-				buttonElement.src = "img/banana.gif";
-			});
-		}
-		function viewGames(){
-			document.getElementById("games").style.display = "block";
-			document.getElementById("mobilewarn").remove();
-		}
-	</script>
+            audio.addEventListener("ended", function () {
+                musicGif.style.visibility = 'hidden';
+                audio.src = "img/titanicmonarch.mp3"
+                //audio.src = "img/festive/holiday.mp3"
+                buttonElement.src = "img/banana.gif";
+            });
+        }
+        function viewGames() {
+            document.getElementById("games").style.display = "block";
+            document.getElementById("mobilewarn").remove();
+        }
+    </script>
 </head>
 
 <!-- yummy analytics!! block this if you wish, sorry for the inconvenience -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-7WHQ7LHV8G"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-7WHQ7LHV8G');
+    gtag('config', 'G-7WHQ7LHV8G');
 </script>
 
 <body>
 
-	<!--title-->
-	<center>
-		<img src="img/title.gif" width="300" height "150">
-		<br>
-		<input type="image" id="music" src="img/banana.gif" width="32" height="32" onclick="play()">
-		<img id="musicgif" class="musicgif" src="img/music.gif" width="51" height="32">
-		<audio id="audio" src="img/acybersworld.mp3"></audio>
+    <!--title-->
+    <center>
+        <img src="img/title.gif" width="300" height "150">
+        <br>
+        <input type="image" id="music" src="img/banana.gif" width="32" height="32" onclick="play()">
+        <img id="musicgif" class="musicgif" src="img/music.gif" width="51" height="32">
+        <audio id="audio" src="img/acybersworld.mp3"></audio>
 
-		<!-- festive stuff
+        <!-- festive stuff
         <img id="musicgif" class="musicgif" src="img/festive/cTree.gif" width="32" height="45">
 		<audio id="audio" src="img/festive/xmas_card_95.wav"></audio> -->
-	</center>
+    </center>
 
-	<!--web site-->
-	<hr>
+    <!--web site-->
+    <hr>
     <center>
-    <div class = "space">
-		<p>
-			<i><b>welcome!</b></i>
-			<br>
-		</p>
+        <div class="space">
+            <p>
+                <i><b>welcome!</b></i>
+                <br>
+            </p>
 
-        
-        <div class="deform" id="orbit">
-            
-            <div class="rotate delay-1"><div class="counterrotate delay-1"><div class="inner">
-                <p><b>Games</b></p>
-            </div></div></div>
 
-            <div class="rotate delay-2"><div class="counterrotate delay-2"><div class="inner">
-                <a href="games/puzzlegame">Puzzle Game</a>
-            </div></div></div>
+            <div class="deform" id="orbit">
 
-            <div class="rotate delay-3"><div class="counterrotate delay-3"><div class="inner">
-                <a href="games/cubeplatformer">Cube Platformer</a>
-            </div></div></div>
+                <div class="rotate delay-1">
+                    <div class="counterrotate delay-1">
+                        <div class="inner">
+                            <p><b>Games</b></p>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="rotate delay-4"><div class="counterrotate delay-4"><div class="inner">
-                <a href="games/sds">Soda Drinking Simulator</a>
-            </div></div></div>
+                <div class="rotate delay-2">
+                    <div class="counterrotate delay-2">
+                        <div class="inner">
+                            <a href="games/puzzlegame">Puzzle Game</a>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="rotate delay-5"><div class="counterrotate delay-5"><div class="inner">
-                <a href="games/eds">Eggnog Drinking Simulator</a>
-            </div></div></div>
+                <div class="rotate delay-3">
+                    <div class="counterrotate delay-3">
+                        <div class="inner">
+                            <a href="games/cubeplatformer">Cube Platformer</a>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="rotate delay-6"><div class="counterrotate delay-6"><div class="inner">
-                <p><b>Other</b></p>
-            </div></div></div>
+                <div class="rotate delay-4">
+                    <div class="counterrotate delay-4">
+                        <div class="inner">
+                            <a href="games/sds">Soda Drinking Simulator</a>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="rotate delay-7"><div class="counterrotate delay-7"><div class="inner">
-                <a href="other/supermassive" style="color:black; filter:drop-shadow(1px 2px 4px #ffff00);">BLACK HOLE</a>
-            </div></div></div>
+                <div class="rotate delay-5">
+                    <div class="counterrotate delay-5">
+                        <div class="inner">
+                            <a href="games/eds">Eggnog Drinking Simulator</a>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="rotate delay-8"><div class="counterrotate delay-8"><div class="inner">
-                <a href="other/computer">Computer</a>
-            </div></div></div>
+                <div class="rotate delay-6">
+                    <div class="counterrotate delay-6">
+                        <div class="inner">
+                            <p><b>Other</b></p>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="rotate delay-9"><div class="counterrotate delay-9"><div class="inner">
-                <a href="other/stopwatch">Stopwatch</a>
-            </div></div></div>
+                <div class="rotate delay-7">
+                    <div class="counterrotate delay-7">
+                        <div class="inner">
+                            <a href="other/supermassive"
+                                style="color:black; filter:drop-shadow(1px 2px 4px #ffff00);">BLACK HOLE</a>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="rotate delay-10"><div class="counterrotate delay-10"><div class="inner">
-                <a href = "guestbook" style="animation: featured 3s infinite;" title = "leave a message! :D">Guestbook</a>
-            </div></div></div>
+                <div class="rotate delay-8">
+                    <div class="counterrotate delay-8">
+                        <div class="inner">
+                            <a href="other/computer">Computer</a>
+                        </div>
+                    </div>
+                </div>
 
-            <!-- THE spinningbanana -->
-            <div class = "counterdeform" id="spinningbanana">
-                <img src="img/spinningbanana.gif">
-            </div>  
+                <div class="rotate delay-9">
+                    <div class="counterrotate delay-9">
+                        <div class="inner">
+                            <a href="other/stopwatch">Stopwatch</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rotate delay-10">
+                    <div class="counterrotate delay-10">
+                        <div class="inner">
+                            <a href="guestbook" style="animation: featured 3s infinite;"
+                                title="leave a message! :D">Guestbook</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- THE spinningbanana -->
+                <div class="counterdeform" id="spinningbanana">
+                    <img src="img/spinningbanana.gif">
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <noscript><b>
+                    <center>
+                        <p class="smol">javascript is not enabled</p>
+                    </center>
+                </b></noscript>
+
         </div>
-
-        <br>    
-        <br>
-	    <noscript><b>
-			<center>
-				<p class="smol">javascript is not enabled</p>
-			</center>
-		</b></noscript>
-
-	</div>
     </center>
     <hr>
 
-	<!--"ads"-->
-	<div class="topad">
-		<a href="https://en.wikipedia.org/wiki/Yahoo!_GeoCities" target="_blank" rel="noopener noreferrer">
-			<img src="img/yahoo.gif" height="100" title="rip geocities"></a>
-	</div>
+    <!--"ads"-->
+    <div class="topad">
+        <a href="https://en.wikipedia.org/wiki/Yahoo!_GeoCities" target="_blank" rel="noopener noreferrer">
+            <img src="img/yahoo.gif" height="100" title="rip geocities"></a>
+    </div>
 
-	<div class="mid"><a id="bannerLink" href="">
-			<img id="banner" border="0" src="img/banners/loading.gif" class="hidden-mobile" alt="pls enable javascript"
-				width="400" height="75"></a>
-	</div>
+    <div class="mid"><a id="bannerLink" href="">
+            <img id="banner" border="0" src="img/banners/loading.gif" class="hidden-mobile" alt="pls enable javascript"
+                width="400" height="75"></a>
+    </div>
 
-	<!--buttons for other stuffs-->
-	<a href="https://helloimbanana.neocities.org/" target="_blank" rel="noopener noreferrer" id="buttonLink-1">
-		<img src="img/buttons/bananaclub.gif" border="0" width="88" height="31" id="button-1"></a>
+    <!--buttons for other stuffs-->
+    <a href="https://helloimbanana.neocities.org/" target="_blank" rel="noopener noreferrer" id="buttonLink-1">
+        <img src="img/buttons/bananaclub.gif" border="0" width="88" height="31" id="button-1"></a>
 
-	<a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer" id="buttonLink-2">
-		<img src="img/buttons/vscode.gif" border="0" width="88" height="31" id="button-2"></a>
-	<br>
-	<!------------------------------------->
-	<a href="" target="" rel="noopener noreferrer" id="buttonLink-3">
-		<img border="0" src="img/buttons/spinningbanana.png" height="31" width="88" id="button-3"></a>
+    <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer" id="buttonLink-2">
+        <img src="img/buttons/vscode.gif" border="0" width="88" height="31" id="button-2"></a>
+    <br>
+    <!------------------------------------->
+    <a href="" target="" rel="noopener noreferrer" id="buttonLink-3">
+        <img border="0" src="img/buttons/spinningbanana.png" height="31" width="88" id="button-3"></a>
     <a href="" target="" rel="noopener noreferrer" id="buttonLink-4">
         <img src="img/buttons/construction.gif" border="0" width="88" height="31" id="button-4"></a>
-	<br>
-	<!------------------------------------->
-	<a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fspinningbanana.com%2F" target="_blank"
-		rel="noopener noreferrer" id="buttonLink-5">
-		<img border="0" src="img/buttons/vh32.png" height="31" width="88" id="button-5"></a>
+    <br>
+    <!------------------------------------->
+    <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fspinningbanana.com%2F" target="_blank"
+        rel="noopener noreferrer" id="buttonLink-5">
+        <img border="0" src="img/buttons/vh32.png" height="31" width="88" id="button-5"></a>
 
-	<a href="http://textures.neocities.org" target="_blank" rel="noopener noreferrer" id="buttonLink-6">
-		<img src="img/buttons/texturetown.gif" border="0" width="88" height="31" id="button-6"></a>
+    <a href="http://textures.neocities.org" target="_blank" rel="noopener noreferrer" id="buttonLink-6">
+        <img src="img/buttons/texturetown.gif" border="0" width="88" height="31" id="button-6"></a>
 
-	<div class="hidden-desktop">
-		<center>
-			<a id="bannerLinkM" href="">
-				<img id="bannerM" border="0" src="img/banners/loading.gif" alt = "loading..." title="loading..." width="300"
-					height="50">
-			</a>
-		</center>
-	</div>
-	
+    <div class="hidden-desktop">
+        <center>
+            <a id="bannerLinkM" href="">
+                <img id="bannerM" border="0" src="img/banners/loading.gif" alt="loading..." title="loading..."
+                    width="300" height="50">
+            </a>
+        </center>
+    </div>
+
     <!--
 	<script>
 		// Detects if the user is on a mobile device
@@ -192,7 +234,7 @@
 		}
 	</script> -->
 
-	<script src="randomize.js"></script>
+    <script src="randomize.js"></script>
 </body>
 
 </html>
