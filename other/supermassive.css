@@ -90,6 +90,23 @@ p {
     
         background-color: black;
     }
+
+    .bottomcover  {
+        position: absolute;
+        width: 80%;
+        max-width: 400px;
+        aspect-ratio: 5/1;
+        max-height: 250px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -70%);
+    
+        pointer-events: none;
+    
+        z-index: -2;
+    
+        background-color: black;
+    }
 }
 @media screen and (min-width:450px) and (max-width:680px){
     .hole  {
@@ -105,6 +122,23 @@ p {
         border-radius: 50%;
     
         pointer-events: none;
+    
+        background-color: black;
+    }
+
+    .bottomcover  {
+        position: absolute;
+        width: 40%;
+        max-width: 400px;
+        aspect-ratio: 5/1;
+        max-height: 250px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    
+        pointer-events: none;
+    
+        z-index: -2;
     
         background-color: black;
     }
@@ -126,24 +160,23 @@ p {
     
         background-color: black;
     }
-}
 
-
-.bottomcover  {
-    position: absolute;
-    width: 40%;
-    max-width: 400px;
-    aspect-ratio: 5/1;
-    max-height: 250px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    pointer-events: none;
-
-    z-index: -2;
-
-    background-color: black;
+    .bottomcover  {
+        position: absolute;
+        width: 40%;
+        max-width: 400px;
+        aspect-ratio: 5/1;
+        max-height: 250px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    
+        pointer-events: none;
+    
+        z-index: -2;
+    
+        background-color: black;
+    }
 }
 
 .rotate {
