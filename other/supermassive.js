@@ -21,10 +21,10 @@ var slider = document.getElementById("particleSlider");
 var isMobile = false;
 if (/Mobile|Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
     isMobile = true;
-	particles = 0;
-    slider.max = 50;
-    slider.min = -50;
-    slider.value = 0;
+	particles = -0.2;
+    slider.max = 20;
+    slider.min = -60;
+    slider.value = -20;
 }
 
 var button = document.getElementById("startButton");
