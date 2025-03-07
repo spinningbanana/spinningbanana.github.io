@@ -42,21 +42,21 @@ button.onclick = function() {
         {duration: 500, fill: "forwards"}
     );
 
-    create(false);
-
-    audio.play();
-}
-
-function create(glow) {
     var hole = document.getElementById("hole")
     hole.style.visibility = "visible";
     hole.animate(
         [{backgroundColor: "#ffffff"}, {backgroundColor: "#000000"}],
         {duration: 500, fill: "forwards"}
     );
-    
+
     document.getElementById("slider").style.visibility = "visible";
 
+    create(false);
+
+    audio.play();
+}
+
+function create(glow) {
     // ACCRETION DISC
     for (let i = 0; i < 200 + 300 * particles; i++) {
         var outer = document.createElement("div");
