@@ -3,16 +3,19 @@ body {
 }
 
 p {
-    transform: translate3d(0, 0, 0);
+    transform: translateZ(0);
+    will-change: box-shadow;
+    will-change: text-shadow;
+    will-change: filter;
     color: yellow;
 }
 
 .space { /* this is the container, basically */
+    transform: translateZ(0);
     position: absolute;
     height: 100%;
     width: 100%;
     background-color: white;
-    transform: translate3d(0, 0, 0);
     overflow: hidden;
 }
 
