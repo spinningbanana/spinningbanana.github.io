@@ -174,3 +174,9 @@ a:active {
 .closebtn:hover {
   color: white;
 }
+
+@keyframes featured {
+    0%   {color:darkblue;}
+    50%  {color:gold;}
+    100% {color:darkblue;}
+}
