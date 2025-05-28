@@ -172,8 +172,8 @@ button12 = {
 
 button13 = {
     "src": "img/buttons/2value.png",
-	"link": "",
-    "target": ""
+	"link": "https://ko-fi.com/spinningbanana",
+    "target": "_blank"
 }
 
 buttons = [
