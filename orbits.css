@@ -44,7 +44,7 @@
 */
 
 :root {
-    --count: 10; /* Total number of elements that are spinning around */
+    --count: 11; /* Total number of elements that are spinning around */
     --duration: 17.5; /* duration of spin */
 }
 

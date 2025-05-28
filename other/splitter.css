@@ -1,0 +1,46 @@
+/*background and formatting*/
+* {
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    line-height: 20px;
+}
+
+body {
+    background-color: #f2f3f2;
+}
+
+.disc {
+    float: right;
+    width: 30%;
+    min-width: 125px;
+    max-width: 200px
+}
+
+.container {
+    text-align: left;
+    width: 90%;
+    max-width: 600px;
+    background-color: #ffffff;
+    padding: 0.5vw;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+    outline-style: solid;
+    outline-color: black;
+    outline-width: 1px;
+}
+
+.credit {
+    position: fixed;
+    opacity: 0.15;
+    bottom: 2px;
+    right: 2px;
+    margin-bottom: 0 !important;
+}
+
+.credit:hover {
+    position: fixed;
+    opacity: 1;
+    bottom: 2px;
+    right: 2px;
+    margin-bottom: 0 !important;
+}

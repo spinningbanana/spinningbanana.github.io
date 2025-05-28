@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DVD_RTR_VMG0 .VRO Splitter</title>
+    <link rel="icon" href="../img/splitter/icon.png">
+    <link rel="stylesheet" href="splitter.css">
+    <meta name="description" content="Stopwatch">
+    <meta name="theme-color" content="#f0f5d8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DVDRAM .VRO splitter">
+    <meta name="keywords"
+        content="VRO cutter, VRO splitter, IFO splitter, VRO to mpg, IFO to mpg, DVDRAM splitter, DVD_RTR_VMG0, DVDRAM">
+
+    <html lang="en">
+</head>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7WHQ7LHV8G"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-7WHQ7LHV8G');
+</script>
+
+<body>
+    <center>
+        <div class="container">
+            <img src="../img/splitter/logo.png" style="width: 100%">
+        </div>
+
+        <div class="container">
+            <center>
+                <a href="https://github.com/spinningbanana/dvd-rtr-vmg0-splitter/releases/download/v1.0.0/DVDRTRVMG0Splitter-1.0.0.exe">
+                    >> Download Latest Version <<
+                </a> <br>
+                <a href="https://github.com/spinningbanana/dvd-rtr-vmg0-splitter">
+                    >> Github Repository <<
+                </a>
+            </center>
+
+            <b>Overview</b> 
+            <img class="disc" src="../img/splitter/disc.gif">
+            <p>
+                I recently found an old Hitachi DVDRAM camcorder lying around and had some fun taking videos with it.
+                When it came time to get the videos onto my computer, I ran into some trouble: There was only a .VRO
+                file, which was one video of all the clips that I had taken, and there was no way to split the file
+                back into individual clips as the software that was provided was too old for my computer.
+
+                I eventually discovered programs like TMPGEnc that could split the .VRO, but none of them were free.
+            </p>
+            <p>
+                So, I decided to give it a try and wrote a program that splits .VRO files into .mpg files. This program
+                reads the binary of .IFO files and uses ffmpeg to split the accompanying .VRO file into multiple .mpg files
+                without re-encoding. Note that splits are not super accurate and there may be a few frames from the next clip in each clip.
+                This can be mitigated by adjusting a few settings, however.
+            </p>
+
+            <br>
+            <b>Screenshots</b>
+            <br>
+            <center>
+                <img src="../img/splitter/screenshot1.png" style="width:75%">
+                <img src="../img/splitter/screenshot2.png" style="width:75%">
+                <img src="../img/splitter/screenshot3.png" style="width:75%">
+            </center>
+        </div>
+
+        <div class="container" id="downloads">
+            <b>Downloads</b>
+            <p>
+                <a href="https://github.com/spinningbanana/dvd-rtr-vmg0-splitter/releases/download/v1.0.0/DVDRTRVMG0Splitter-1.0.0.exe">
+                    Version 1.0.0
+                </a>
+            </p>
+        </div>
+        <p style="font-size: 12px;">© 2025 spinningbanana</p>
+    </center>
+
+    <a href="../"><img src="../img/buttons/spinningbanana.png" class="credit"></img></a>
+</body>
+
+</html>
