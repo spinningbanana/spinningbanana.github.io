@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DECISION</title>
+    <link rel="icon" href="../img/decision/face.png">
+    <meta name="description" content="THE DECISION">
+    <meta name="theme-color" content="#000000">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <html lang="en">
+    <style>
+        body {
+            background-color: grey;
+        }
+
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -moz-transform: translateX(-50%) translateY(-50%);
+            -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+        }
+    </style>
+    <script>
+        var audio;
+        var playing = false;
+        function play() {
+            if (playing == false) {
+                var decision = Math.floor(Math.random() * 2);
+                if (decision == 0) {
+                    audio = new Audio('../img/decision/crowd_gasp.mp3');
+                } else {
+                    audio = new Audio('../img/decision/crowd_ahh.mp3');
+                }
+                audio.play();
+                playing = true;
+                audio.addEventListener("ended", function () {
+                    console.log("ended")
+                    playing = false;
+                })
+                var img = document.getElementById("button");
+                var p = document.getElementById("text");
+
+                var link = document.querySelector("link[rel~='icon']");
+
+                if (decision == 0) {
+                    document.title = "No thanks !";
+                    link.href = '../img/decision/face_lost.png';
+                    img.src = "../img/decision/face_lost.png";
+                    p.innerHTML = "Sex with men? No thanks !";
+
+                    document.body.style.backgroundColor = "black";
+                    p.style.color = "#ffffff";
+                } else {
+                    document.title = "Yes please!";
+                    link.href = '../img/decision/face-won.png';
+                    img.src = "../img/decision/face-won.png";
+                    p.innerHTML = "Sex with women? Yes please!";
+
+                    document.body.style.backgroundColor = "white";
+                    p.style.color = "#000000";
+                }
+            }
+        }
+    </script>
+</head>
+<!-- yummy analytics!! block this if you wish, sorry for the inconvenience -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7WHQ7LHV8G"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-7WHQ7LHV8G');
+</script>
+
+<body>
+    <div class="container">
+        <center>
+            <input type="image" id="button" src="../img/decision/face.png" width="24" height="24" onclick="play()">
+            <p id="text">Click me to make a decision</p>
+            <noscript>Need javascript to decide</noscript>
+        </center>
+    </div>
+</body>
+
+</html>
