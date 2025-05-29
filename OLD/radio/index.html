@@ -1,54 +1,69 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>cool radio</title>
-<link rel="icon" href="icon.png">
-<link rel="stylesheet" href="../styles.css">
-<meta name="description" content="take a listen">
-<meta name="theme-color" content="#cececd">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<html lang="en">
+    <title>cool radio</title>
+    <link rel="icon" href="icon.png">
+    <link rel="stylesheet" href="../styles.css">
+    <meta name="description" content="take a listen">
+    <meta name="theme-color" content="#cececd">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <html lang="en">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7WHQ7LHV8G"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-7WHQ7LHV8G');
+    </script>
 </head>
+
 <body>
-<style>
-body {
-  background-image: linear-gradient(
-  45deg, 
-  #e4e4e4 25%, 
-  #cececd 25%, 
-  #cececd 50%, 
-  #e4e4e4 50%, 
-  #e4e4e4 75%, 
-  #cececd 75%, 
-  #cececd 100%);
-  background-size: 141.42px 141.42px;
-);
-}
+    <style>
+        body {
+            background-image: linear-gradient(45deg,
+                    #e4e4e4 25%,
+                    #cececd 25%,
+                    #cececd 50%,
+                    #e4e4e4 50%,
+                    #e4e4e4 75%,
+                    #cececd 75%,
+                    #cececd 100%);
+            background-size: 141.42px 141.42px;
+            );
+        }
 
-.bottomright {
-  bottom: 0px;
-}
-</style>
+        .bottomright {
+            bottom: 0px;
+        }
+    </style>
 
-<!--Spent way too long figuring this out...-->
-<div class="buttonstuff">
-	<img src="radio.png" width="100" height="164" alt="radio" class="center">
-</div>
-<script>
-      function play() {
-        var audio = document.getElementById("audio");
-		var element = document.getElementById("button");
-        audio.play();
-		audio.loop = true;
-		element.parentNode.removeChild(element);
-      }
+    <!--Spent way too long figuring this out...-->
+    <div class="buttonstuff">
+        <img src="radio.png" width="100" height="164" alt="radio" class="center">
+    </div>
+    <script>
+        function play() {
+            var audio = document.getElementById("audio");
+            var element = document.getElementById("button");
+            audio.play();
+            audio.loop = true;
+            element.parentNode.removeChild(element);
+        }
     </script>
 
     <input type="button" class="buttonstuff" id="button" value="PLAY" onclick="play()">
     <audio id="audio" src="radio.mp3"></audio>
-	
-<a href="https://spinningbanana.github.io"><p class="bottom">Home</a>
-<a href="https://spinningbanana.github.io/radio/doom"><p class="bottomright">cool radio</a>
+
+    <a href="https://spinningbanana.github.io">
+        <p class="bottom">Home
+    </a>
+    <a href="https://spinningbanana.github.io/radio/doom">
+        <p class="bottomright">cool radio
+    </a>
 
 </body>
+
 </html>

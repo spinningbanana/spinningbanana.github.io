@@ -1,86 +1,98 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Stopwatch</title>
-<link rel="icon" href="">
-<link rel="stylesheet" href="../styles.css">
-<meta name="description" content="Stopwatch">
-<meta name="theme-color" content="#f0f5d8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<html lang="en">
-<style>
-.timerDisplay{
-    text-align: center;
-    font-size: 5vw;
-    margin-left: auto;
-    margin-right: auto;
-}
-</style>
+    <title>Stopwatch</title>
+    <link rel="icon" href="">
+    <link rel="stylesheet" href="../styles.css">
+    <meta name="description" content="Stopwatch">
+    <meta name="theme-color" content="#f0f5d8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <html lang="en">
+    <style>
+        .timerDisplay {
+            text-align: center;
+            font-size: 5vw;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7WHQ7LHV8G"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-7WHQ7LHV8G');
+    </script>
 </head>
+
 <body>
-<center>
-    <a href = "../">
-    <img src="../img/title.gif" width = "300" height "150">
-    </a>
-</center>
-<div class ="container">
-    <div class="timerDisplay">
-		<center>
-            00 : 00 : 00 : 000
-        </center>
-		</div>
+    <center>
+        <a href="../">
+            <img src="../img/title.gif" width="300" height "150">
+        </a>
+    </center>
+    <div class="container">
+        <div class="timerDisplay">
+            <center>
+                00 : 00 : 00 : 000
+            </center>
+        </div>
         <center>
             <button id="startTimer">Start</button>
             <button id="pauseTimer">Pause</button>
             <button id="resetTimer">Reset</button>
         </center>
-</div>
-<script>
-    let [milliseconds,seconds,minutes,hours] = [0,0,0,0];
-    let timerRef = document.querySelector('.timerDisplay');
-    let int = null;
+    </div>
+    <script>
+        let [milliseconds, seconds, minutes, hours] = [0, 0, 0, 0];
+        let timerRef = document.querySelector('.timerDisplay');
+        let int = null;
 
-    document.getElementById('startTimer').addEventListener('click', ()=>{
-        if(int!==null){
+        document.getElementById('startTimer').addEventListener('click', () => {
+            if (int !== null) {
+                clearInterval(int);
+            }
+            int = setInterval(displayTimer, 10);
+        });
+
+        document.getElementById('pauseTimer').addEventListener('click', () => {
             clearInterval(int);
-        }
-        int = setInterval(displayTimer,10);
-    });
+        });
 
-    document.getElementById('pauseTimer').addEventListener('click', ()=>{
-        clearInterval(int);
-    });
+        document.getElementById('resetTimer').addEventListener('click', () => {
+            clearInterval(int);
+            [milliseconds, seconds, minutes, hours] = [0, 0, 0, 0];
+            timerRef.innerHTML = '00 : 00 : 00 : 000';
+        });
 
-    document.getElementById('resetTimer').addEventListener('click', ()=>{
-        clearInterval(int);
-        [milliseconds,seconds,minutes,hours] = [0,0,0,0];
-        timerRef.innerHTML = '00 : 00 : 00 : 000';
-    });
-
-    function displayTimer(){
-        milliseconds+=10;
-        if(milliseconds == 1000){
-            milliseconds = 0;
-            seconds++;
-            if(seconds == 60){
-                seconds = 0;
-                minutes++;
-                if(minutes == 60){
-                    minutes = 0;
-                    hours++;
+        function displayTimer() {
+            milliseconds += 10;
+            if (milliseconds == 1000) {
+                milliseconds = 0;
+                seconds++;
+                if (seconds == 60) {
+                    seconds = 0;
+                    minutes++;
+                    if (minutes == 60) {
+                        minutes = 0;
+                        hours++;
+                    }
                 }
             }
-        }
-        let h = hours < 10 ? "0" + hours : hours;
-        let m = minutes < 10 ? "0" + minutes : minutes;
-        let s = seconds < 10 ? "0" + seconds : seconds;
-        let ms = milliseconds < 10 ? "0" + milliseconds : milliseconds < 100 ? "0" + milliseconds : milliseconds;
+            let h = hours < 10 ? "0" + hours : hours;
+            let m = minutes < 10 ? "0" + minutes : minutes;
+            let s = seconds < 10 ? "0" + seconds : seconds;
+            let ms = milliseconds < 10 ? "0" + milliseconds : milliseconds < 100 ? "0" + milliseconds : milliseconds;
 
-        timerRef.innerHTML = ` ${h} : ${m} : ${s} : ${ms}`;
-    }
-</script>
-<a href="../" class ="bottom">
-    <img src = "../img/home.gif">
-</a>
+            timerRef.innerHTML = ` ${h} : ${m} : ${s} : ${ms}`;
+        }
+    </script>
+    <a href="../" class="bottom">
+        <img src="../img/home.gif">
+    </a>
 </body>
+
 </html>
