@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords"
         content="VRO cutter, VRO splitter, IFO splitter, VRO to mpg, IFO to mpg, DVDRAM splitter, DVD_RTR_VMG0, DVDRAM">
-    
+
     <title>DVD_RTR_VMG0 .VRO Splitter</title>
     <link rel="icon" href="../img/splitter/icon.png">
     <link rel="stylesheet" href="splitter.css">
@@ -36,38 +36,43 @@
 
         <div class="container">
             <center>
-                <a href="https://github.com/spinningbanana/dvd-rtr-vmg0-splitter/releases/download/v1.0.1/DVDRTRVMG0Splitter-1.0.1.exe">
-                    >> Download Latest Version <<
-                </a> <br>
-                <a href="https://github.com/spinningbanana/dvd-rtr-vmg0-splitter">
-                    >> Github Repository <<
-                </a>
+                <a
+                    href="https://github.com/spinningbanana/dvd-rtr-vmg0-splitter/releases/download/v1.0.1/DVDRTRVMG0Splitter-1.0.1.exe">
+                    >> Download Latest Version << </a> <br>
+                        <a href="https://github.com/spinningbanana/dvd-rtr-vmg0-splitter">
+                            >> Github Repository << </a>
             </center>
 
-            <b>Overview</b> 
+            <b>Overview</b>
             <img class="disc" src="../img/splitter/disc.gif">
             <p>
                 I recently found an old Hitachi DVDRAM camcorder lying around and had some fun taking videos with it.
-                When it came time to get the videos onto my computer, I ran into some trouble: There was only an .IFO, and .VRO 
+                When it came time to get the videos onto my computer, I ran into some trouble: There was only an .IFO,
+                and .VRO
                 file which was one video of all the clips that I had taken. There was no apparent way to split the file
                 back into individual clips as the software that was provided was too old for my computer.
             </p>
             <p>
-                I eventually found programs like 
-                <a href="https://tmpgenc.pegasys-inc.com/en/product/tmsr6.html" target="_blank">TMPGEnc Smart Encoder 6</a> 
-                that could split the .VRO, but none of them were free. Also, with TMPGEnc, the clips need to be re-encoded to be split...
+                I eventually found programs like
+                <a href="https://tmpgenc.pegasys-inc.com/en/product/tmsr6.html" target="_blank">TMPGEnc Smart Encoder
+                    6</a>
+                that could split the .VRO, but none of them were free. Also, with TMPGEnc, the clips need to be
+                re-encoded to be split...
             </p>
             <p>
                 So, I decided to give it a try and wrote a program that splits .VRO files into .mpg files. This program
                 reads the binary of .IFO files and parses information regarding titles and video clip durations.
                 It then uses ffmpeg to split the accompanying .VRO file into multiple .mpg files
-                without re-encoding. Note that splits are not super accurate and there may be a few frames from the next clip in each clip.
+                without re-encoding. Note that splits are not super accurate and there may be a few frames from the next
+                clip in each clip.
                 This can be mitigated by adjusting the "Split Offset" setting, however.
             </p>
             <p>
                 Also, while making this program I realized there is another variant of .IFO files of type "DVD-VR". This
-                program does not know how to read them!! It only deals with .IFO files of type "DVD_RTR_VMG0". Check out pixelb's 
-                <a href="https://github.com/pixelb/dvd-vr/tree/master" target="_blank">dvd-vr</a> if you have a DVD-VR file, it seems like it
+                program does not know how to read them!! It only deals with .IFO files of type "DVD_RTR_VMG0". Check out
+                pixelb's
+                <a href="https://github.com/pixelb/dvd-vr/tree/master" target="_blank">dvd-vr</a> if you have a DVD-VR
+                file, it seems like it
                 will work.
             </p>
 
@@ -83,16 +88,24 @@
         <div class="container" id="downloads">
             <b>Downloads</b>
             <p>
-                <a href="https://github.com/spinningbanana/dvd-rtr-vmg0-splitter/releases/download/v1.0.1/DVDRTRVMG0Splitter-1.0.1.exe">
+                <a
+                    href="https://github.com/spinningbanana/dvd-rtr-vmg0-splitter/releases/download/v1.0.1/DVDRTRVMG0Splitter-1.0.1.exe">
                     Version 1.0.1
                 </a> <br>
 
-                <a href="https://github.com/spinningbanana/dvd-rtr-vmg0-splitter/releases/download/v1.0.0/DVDRTRVMG0Splitter-1.0.0.exe">
+                <a
+                    href="https://github.com/spinningbanana/dvd-rtr-vmg0-splitter/releases/download/v1.0.0/DVDRTRVMG0Splitter-1.0.0.exe">
                     Version 1.0.0
                 </a>
             </p>
         </div>
-        <p style="font-size: 12px;">© 2025 spinningbanana</p>
+        <p style="font-size: 12px; margin-top: 0px; margin-bottom: 0px">
+            If you think this is cool,
+            <a href="https://ko-fi.com/spinningbanana">
+                donations are appreciated!
+            </a> 
+        </p>
+        <p style="font-size: 12px; margin-top: 0px; margin-bottom: 0px">© 2025 spinningbanana</p>
     </center>
 
     <a href="../"><img src="../img/buttons/spinningbanana.png" class="credit"></img></a>
