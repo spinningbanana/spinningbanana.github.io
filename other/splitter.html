@@ -46,9 +46,17 @@
             <b>Overview</b>
             <img class="disc" src="../img/splitter/disc.gif">
             <p>
+                This program reads the binary of *.IFO files and parses information regarding titles and video clip durations.
+                It then uses ffmpeg to split the accompanying *.VRO file into multiple *.mpg files
+                without re-encoding. Note that splits may not be extremely accurate and there may be a few frames from the next
+                clip in each clip.
+                This can be mitigated by adjusting the "Split Offset" setting.
+            </p>
+            <b>Background</b>
+            <p>
                 I recently found an old Hitachi DVDRAM camcorder lying around and had some fun taking videos with it.
-                When it came time to get the videos onto my computer, I ran into some trouble: There was only an .IFO,
-                and .VRO
+                When it came time to get the videos onto my computer, I ran into some trouble: There was only an *.IFO,
+                and *.VRO
                 file which was one video of all the clips that I had taken. There was no apparent way to split the file
                 back into individual clips as the software that was provided was too old for my computer.
             </p>
@@ -56,22 +64,13 @@
                 I eventually found programs like
                 <a href="https://tmpgenc.pegasys-inc.com/en/product/tmsr6.html" target="_blank">TMPGEnc Smart Encoder
                     6</a>
-                that could split the .VRO, but none of them were free. Also, with TMPGEnc, the clips need to be
+                that could split the *.VRO, but none of them were free. Also, with TMPGEnc, the clips need to be
                 re-encoded to be split...
-            </p>
-            <p>
-                So, I decided to give it a try and wrote a program that splits .VRO files into .mpg files. This program
-                reads the binary of .IFO files and parses information regarding titles and video clip durations.
-                It then uses ffmpeg to split the accompanying .VRO file into multiple .mpg files
-                without re-encoding. Note that splits are not super accurate and there may be a few frames from the next
-                clip in each clip.
-                This can be mitigated by adjusting the "Split Offset" setting, however.
             </p>
             <p>
                 While I was researching this file format I also found pixeldb's 
                 <a href="https://github.com/pixelb/dvd-vr" target="_blank">
-                    dvd-vr</a>, but I geniunely have no clue how it works. I think it might work better than my program at
-                actually splitting .VRO files, though, because their code looks a lot smarter than mine!
+                    dvd-vr</a>, this seems to also work, but I'm not sure how it works. 
             </p>
 
             <b>Screenshots</b>
